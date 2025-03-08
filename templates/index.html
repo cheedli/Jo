@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask AI - Q&A Beta</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+    rel="stylesheet"
+  />
+
+  <!-- Marked library for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    /* Base reset & bigger text */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+    html, body {
+      background: #fafafa; /* Light neutral background */
+      color: #333;
+      height: 100%;
+      overflow-y: auto;
+      font-size: 16px; /* Base font size */
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top bar */
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #D32F2F; /* Deep red for header */
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      color: #fff;
+    }
+    #header h1 {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+    #header .controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    #header button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      color: #fff;
+      transition: opacity 0.2s ease;
+    }
+    #header button:hover {
+      opacity: 0.8;
+    }
+
+    /* Main container with rounding and shadow */
+    #main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Chat area with more subtle rounding */
+    #chat-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      overflow-y: auto;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: #fdfdfd;
+    }
+    #chat-area::-webkit-scrollbar {
+      width: 8px;
+    }
+    #chat-area::-webkit-scrollbar-track {
+      background: #f0f0f0;
+      border-radius: 4px;
+    }
+    #chat-area::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    /* Chat bubbles (messages) */
+    .message {
+      max-width: 75%;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      line-height: 1.4;
+      font-size: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      background: #fff;
+      border: 1px solid #eee;
+    }
+    .user-message {
+      align-self: flex-end;
+      background: #ffe6e9; /* Light pink-ish background for user msg */
+      border-color: #f5b7bc;
+    }
+    .bot-message {
+      align-self: flex-start;
+      background: #fff; /* default */
+    }
+
+    /* Reasoning and sources toggles */
+    details.reasoning-toggle {
+      margin-top: 0.5rem;
+      background: #fcfcfc;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+    }
+    details.reasoning-toggle summary {
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .reasoning-content {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #444;
+      white-space: pre-wrap;
+    }
+
+    .final-answer {
+      background: #fffdfa;
+      border: 1px solid #f3ede8;
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      margin-top: 0.5rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+    .final-answer h3 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Input area */
+    #input-area {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 0;
+    }
+    #query {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      resize: none;
+      outline: none;
+      background: #fff;
+    }
+    #send-btn {
+      background: #D32F2F; /* Red accent */
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    #send-btn:hover {
+      background: #ad1f1f; /* Darker red on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header id="header">
+    <h1>Artificial Minds<span style="color: #ccc; font-size: 0.9rem;"> ComBot</span></h1>
+    <div class="controls">
+      <button onclick="clearChat()" title="Start a new chat">New Chat</button>
+      <button title="Save conversation">Save</button>
+      <button title="More options">&#x2026;</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <div id="main">
+    <!-- The Chat Area -->
+    <div id="chat-area"></div>
+
+    <!-- Input Area -->
+    <div id="input-area">
+      <textarea id="query" rows="1" placeholder="Ask a question about this answer..."></textarea>
+      <button id="send-btn" onclick="sendQuery()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * Removes any Chinese characters from the input string
+     * and logs them (with their position) in the console.
+     */
+    function removeChineseChars(str) {
+      const regex = /[\u4E00-\u9FFF]+/g;
+      let match;
+      while ((match = regex.exec(str)) !== null) {
+        console.log(`Removed Chinese characters "${match[0]}" at index ${match.index}`);
+      }
+      return str.replace(regex, '');
+    }
+
+    // Convert Markdown to HTML
+    function convertMarkdownToHTML(mdText) {
+      return marked.parse(mdText);
+    }
+
+    // Parse <think> blocks
+    function parseThinkBlocks(answer) {
+      const thinkRegex = /<think>([\s\S]*?)<\/think>/g;
+      let reasoning = "";
+      let match;
+      while ((match = thinkRegex.exec(answer)) !== null) {
+        reasoning += match[1].trim() + "\n\n";
+      }
+      const finalAnswer = answer.replace(thinkRegex, "").trim();
+      return { reasoning, finalAnswer };
+    }
+
+    const chatArea = document.getElementById("chat-area");
+    let chatHistory = [];
+
+    function addMessage(content, isUser = false) {
+      const messageDiv = document.createElement("div");
+      messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
+      messageDiv.innerHTML = convertMarkdownToHTML(content);
+      chatArea.appendChild(messageDiv);
+      chatArea.scrollTop = chatArea.scrollHeight;
+    }
+
+    async function sendQuery() {
+      const queryInput = document.getElementById("query");
+      let query = queryInput.value.trim();
+
+      if (!query) return;
+
+      // 1) Remove Chinese chars & log them to the console
+      query = removeChineseChars(query);
+
+      // 2) Display user message
+      addMessage(query, true);
+      queryInput.value = "";
+
+      // 3) Send to server
+      try {
+        const response = await fetch("/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query })
+        });
+
+        if (!response.ok) {
+          addMessage("**Error:** Unable to fetch response from the server.");
+          return;
+        }
+
+        const data = await response.json();
+
+        let botOutput = "";
+        if (data.thinking_time) {
+          botOutput += `**Thinking Time:** ${data.thinking_time} seconds\n\n`;
+        }
+
+        let combinedAnswers = "";
+        if (data.final_answer_en && data.final_answer_en.trim()) {
+          combinedAnswers += data.final_answer_en + "\n\n";
+        }
+        if (data.final_answer_fr && data.final_answer_fr.trim()) {
+          combinedAnswers += data.final_answer_fr + "\n\n";
+        }
+
+        combinedAnswers = removeChineseChars(combinedAnswers);
+
+        // Parse out <think> blocks
+        const { reasoning, finalAnswer } = parseThinkBlocks(combinedAnswers);
+
+        // Reasoning toggle
+        let reasoningToggle = "";
+        if (reasoning) {
+          reasoningToggle = `
+<details class="reasoning-toggle">
+  <summary>Show Reasoning</summary>
+  <div class="reasoning-content">
+${reasoning}
+  </div>
+</details>`;
+        }
+
+        // Final answer block
+        let finalAnswerBlock = "";
+        if (finalAnswer) {
+          finalAnswerBlock = `
+<div class="final-answer">
+  ${convertMarkdownToHTML(finalAnswer)}
+</div>`;
+        }
+
+        botOutput += reasoningToggle + "\n" + finalAnswerBlock;
+
+        // Sources
+        if (Array.isArray(data.sources) && data.sources.length > 0) {
+          let sourcesHTML = `
+<details class="reasoning-toggle">
+  <summary>Show Sources</summary>
+  <div class="reasoning-content">
+    <ul>`;
+          data.sources.forEach((src) => {
+            sourcesHTML += `<li>
+<strong>Law:</strong> ${src.law || 'N/A'}<br/>
+<strong>Article:</strong> ${src.article || 'N/A'}<br/>
+<strong>Section:</strong> ${src.section || 'N/A'}<br/>
+<strong>Chunk:</strong> ${src.chunk_id || 'N/A'}<br/>
+<strong>Page:</strong> ${src.page || 'N/A'}<br/>
+<strong>Updated:</strong> ${src.update_date || 'N/A'}
+</li>`;
+          });
+          sourcesHTML += `</ul></div></details>`;
+          botOutput += sourcesHTML;
+        }
+
+        // Show the final output
+        addMessage(botOutput);
+        chatHistory.push({ query, response: data });
+      } catch (err) {
+        console.error(err);
+        addMessage("**Error:** Network or server issue encountered.");
+      }
+    }
+
+    function clearChat() {
+      chatArea.innerHTML = "";
+      chatHistory = [];
+    }
+
+    // Auto-resize the textarea
+    const textarea = document.getElementById("query");
+    textarea.addEventListener("input", function() {
+      this.style.height = "auto";
+      this.style.height = `${this.scrollHeight}px`;
+    });
+    textarea.addEventListener("keypress", function(e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendQuery();
+      }
+    });
+  </script>
+</body>
+</html>

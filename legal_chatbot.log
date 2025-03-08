@@ -1,0 +1,1562 @@
+INFO:root:Rebuilding indexes due to updated legal_data.json
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:root:Processing entry 0: part_000
+INFO:root:Processing entry 1: part_001
+INFO:root:Processing entry 2: part_002
+INFO:root:Processing entry 3: part_003
+INFO:root:Processing entry 4: part_004
+INFO:root:Processing entry 5: part_005
+INFO:root:Processing entry 6: part_006
+INFO:root:Processing entry 7: part_007
+INFO:root:Processing entry 8: part_008
+INFO:root:Processing entry 9: part_009
+INFO:root:Processing entry 10: part_010
+INFO:root:Processing entry 11: part_011
+INFO:root:Processing entry 12: part_012
+INFO:root:Processing entry 13: part_013
+INFO:root:Processing entry 14: part_014
+INFO:root:Processing entry 15: part_015
+INFO:root:Processing entry 16: part_016
+INFO:root:Processing entry 17: part_017
+INFO:root:Processing entry 18: part_018
+INFO:root:Processing entry 19: part_019
+INFO:root:Processing entry 20: part_020
+INFO:root:Processing entry 21: part_021
+INFO:root:Processing entry 22: part_022
+INFO:root:Processing entry 23: part_023
+INFO:root:Processing entry 24: part_024
+INFO:root:Processing entry 25: part_025
+INFO:root:Processing entry 26: part_026
+INFO:root:Processing entry 27: part_027
+INFO:root:Processing entry 28: part_028
+INFO:root:Processing entry 29: part_029
+INFO:root:Processing entry 30: part_030
+INFO:root:Processing entry 31: part_031
+INFO:root:Processing entry 32: part_032
+INFO:root:Processing entry 33: part_033
+INFO:root:Processing entry 34: part_034
+INFO:root:Processing entry 35: part_035
+INFO:root:Processing entry 36: part_036
+INFO:root:Processing entry 37: part_037
+INFO:root:Processing entry 38: part_038
+INFO:root:Processing entry 39: part_039
+INFO:root:Processing entry 40: part_040
+INFO:root:Processing entry 41: part_041
+INFO:root:Processing entry 42: part_042
+INFO:root:Processing entry 43: part_043
+INFO:root:Processing entry 44: part_044
+INFO:root:Processing entry 45: part_045
+INFO:root:Processing entry 46: part_046
+INFO:root:Processing entry 47: part_047
+INFO:root:Processing entry 48: part_048
+INFO:root:Processing entry 49: part_049
+INFO:root:Processing entry 50: part_050
+INFO:root:Processing entry 51: part_051
+INFO:root:Processing entry 52: part_052
+INFO:root:Processing entry 53: part_053
+INFO:root:Processing entry 54: part_054
+INFO:root:Processing entry 55: part_055
+INFO:root:Processing entry 56: part_056
+INFO:root:Processing entry 57: part_057
+INFO:root:Processing entry 58: part_058
+INFO:root:Processing entry 59: part_059
+INFO:root:Processing entry 60: part_060
+INFO:root:Processing entry 61: part_061
+INFO:root:Processing entry 62: part_062
+INFO:root:Processing entry 63: part_063
+INFO:root:Processing entry 64: part_064
+INFO:root:Processing entry 65: part_065
+INFO:root:Processing entry 66: part_066
+INFO:root:Processing entry 67: part_067
+INFO:root:Processing entry 68: part_068
+INFO:root:Processing entry 69: part_069
+INFO:root:Processing entry 70: part_070
+INFO:root:Processing entry 71: part_071
+INFO:root:Processing entry 72: part_072
+INFO:root:Processing entry 73: part_073
+INFO:root:Processing entry 74: part_074
+INFO:root:Processing entry 75: part_075
+INFO:root:Processing entry 76: part_076
+INFO:root:Processing entry 77: part_077
+INFO:root:Processing entry 78: part_078
+INFO:root:Processing entry 79: part_079
+INFO:root:Processing entry 80: part_080
+INFO:root:Processing entry 81: part_081
+INFO:root:Processing entry 82: part_082
+INFO:root:Processing entry 83: part_083
+INFO:root:Processing entry 84: part_084
+INFO:root:Processing entry 85: part_085
+INFO:root:Processing entry 86: part_086
+INFO:root:Processing entry 87: part_087
+INFO:root:Processing entry 88: part_088
+INFO:root:Processing entry 89: part_089
+INFO:root:Processing entry 90: part_090
+INFO:root:Processing entry 91: part_091
+INFO:root:Processing entry 92: part_092
+INFO:root:Processing entry 93: part_093
+INFO:root:Processing entry 94: part_094
+INFO:root:Processing entry 95: part_095
+INFO:root:Processing entry 96: part_096
+INFO:root:Processing entry 97: part_097
+INFO:root:Processing entry 98: part_098
+INFO:root:Processing entry 99: part_099
+INFO:root:Processing entry 100: part_100
+INFO:root:Processing entry 101: part_101
+INFO:root:Processing entry 102: part_102
+INFO:root:Processing entry 103: part_103
+INFO:root:Processing entry 104: part_104
+INFO:root:Processing entry 105: part_105
+INFO:root:Processing entry 106: part_106
+INFO:root:Processing entry 107: part_107
+INFO:root:Processing entry 108: part_108
+INFO:root:Processing entry 109: part_109
+INFO:root:Processing entry 110: part_110
+INFO:root:Processing entry 111: part_111
+INFO:root:Processing entry 112: part_112
+INFO:root:Processing entry 113: part_113
+INFO:root:Processing entry 114: part_114
+INFO:root:Processing entry 115: part_115
+INFO:root:Processing entry 116: part_116
+INFO:root:Processing entry 117: part_117
+INFO:root:Processing entry 118: part_118
+INFO:root:Processing entry 119: part_119
+INFO:root:Processing entry 120: part_120
+INFO:root:Processing entry 121: part_121
+INFO:root:Processing entry 122: part_122
+INFO:root:Processing entry 123: part_123
+INFO:root:Processing entry 124: part_124
+INFO:root:Processing entry 125: part_125
+INFO:root:Processing entry 126: part_126
+INFO:root:Processing entry 127: part_127
+INFO:root:Processing entry 128: part_128
+INFO:root:Processing entry 129: part_129
+INFO:root:Processing entry 130: part_130
+INFO:root:Processing entry 131: part_131
+INFO:root:Processing entry 132: part_132
+INFO:root:Processing entry 133: part_133
+INFO:root:Processing entry 134: part_134
+INFO:root:Processing entry 135: part_135
+INFO:root:Processing entry 136: part_136
+INFO:root:Processing entry 137: part_137
+INFO:root:Processing entry 138: part_138
+INFO:root:Processing entry 139: part_139
+INFO:root:Processing entry 140: part_140
+INFO:root:Processing entry 141: part_141
+INFO:root:Processing entry 142: part_142
+INFO:root:Processing entry 143: part_143
+INFO:root:Processing entry 144: part_144
+INFO:root:Processing entry 145: part_145
+INFO:root:Processing entry 146: part_146
+INFO:root:Processing entry 147: part_147
+INFO:root:Processing entry 148: part_148
+INFO:root:Processing entry 149: part_149
+INFO:root:Processing entry 150: part_150
+INFO:root:Processing entry 151: part_151
+INFO:root:Processing entry 152: part_152
+INFO:root:Processing entry 153: part_153
+INFO:root:Processing entry 154: part_154
+INFO:root:Processing entry 155: part_155
+INFO:root:Processing entry 156: part_156
+INFO:root:Processing entry 157: part_157
+INFO:root:Processing entry 158: part_158
+INFO:root:Processing entry 159: part_159
+INFO:root:Processing entry 160: part_160
+INFO:root:Processing entry 161: part_161
+INFO:root:Processing entry 162: part_162
+INFO:root:Processing entry 163: part_163
+INFO:root:Processing entry 164: part_164
+INFO:root:Processing entry 165: part_165
+INFO:root:Processing entry 166: part_166
+INFO:root:Processing entry 167: part_167
+INFO:root:Processing entry 168: part_168
+INFO:root:Processing entry 169: part_169
+INFO:root:Processing entry 170: part_170
+INFO:root:Processing entry 171: part_171
+INFO:root:Processing entry 172: part_172
+INFO:root:Processing entry 173: part_173
+INFO:root:Processing entry 174: part_174
+INFO:root:Processing entry 175: part_175
+INFO:root:Processing entry 176: part_176
+INFO:root:Processing entry 177: part_177
+INFO:root:Processing entry 178: part_178
+INFO:root:Processing entry 179: part_179
+INFO:root:Processing entry 180: part_180
+INFO:root:Processing entry 181: part_181
+INFO:root:Processing entry 182: part_182
+INFO:root:Processing entry 183: part_183
+INFO:root:Processing entry 184: part_184
+INFO:root:Processing entry 185: part_185
+INFO:root:Processing entry 186: part_186
+INFO:root:Processing entry 187: part_187
+INFO:root:Processing entry 188: part_188
+INFO:root:Processing entry 189: part_189
+INFO:root:Processing entry 190: part_190
+INFO:root:Processing entry 191: part_191
+INFO:root:Processing entry 192: part_192
+INFO:root:Processing entry 193: part_193
+INFO:root:Processing entry 194: part_194
+INFO:root:Processing entry 195: part_195
+INFO:root:Processing entry 196: part_196
+INFO:root:Processing entry 197: part_197
+INFO:root:Processing entry 198: part_198
+INFO:root:Processing entry 199: part_199
+INFO:root:Processing entry 200: part_200
+INFO:root:Processing entry 201: part_201
+INFO:root:Processing entry 202: part_202
+INFO:root:Processing entry 203: part_203
+INFO:root:Processing entry 204: part_204
+INFO:root:Processing entry 205: part_205
+INFO:root:Processing entry 206: part_206
+INFO:root:Processing entry 207: part_207
+INFO:root:Processing entry 208: part_208
+INFO:root:Processing entry 209: part_209
+INFO:root:Processing entry 210: part_210
+INFO:root:Processing entry 211: part_211
+INFO:root:Processing entry 212: part_212
+INFO:root:Processing entry 213: part_213
+INFO:root:Processing entry 214: part_214
+INFO:root:Processing entry 215: part_215
+INFO:root:Processing entry 216: part_216
+INFO:root:Processing entry 217: part_217
+INFO:root:Processing entry 218: part_218
+INFO:root:Processing entry 219: part_219
+INFO:root:Processing entry 220: part_220
+INFO:root:Processing entry 221: part_221
+INFO:root:Processing entry 222: part_222
+INFO:root:Processing entry 223: part_223
+INFO:root:Processing entry 224: part_224
+INFO:root:Processing entry 225: part_225
+INFO:root:Processing entry 226: part_226
+INFO:root:Processing entry 227: part_227
+INFO:root:Processing entry 228: part_228
+INFO:root:Processing entry 229: part_229
+INFO:root:Processing entry 230: part_230
+INFO:root:Processing entry 231: part_231
+INFO:root:Processing entry 232: part_232
+INFO:root:Processing entry 233: part_233
+INFO:root:Processing entry 234: part_234
+INFO:root:Processing entry 235: part_235
+INFO:root:Processing entry 236: part_236
+INFO:root:Processing entry 237: part_237
+INFO:root:Processing entry 238: part_238
+INFO:root:Processing entry 239: part_239
+INFO:root:Processing entry 240: part_240
+INFO:root:Processing entry 241: part_241
+INFO:root:Processing entry 242: part_242
+INFO:root:Processing entry 243: part_243
+INFO:root:Processing entry 244: part_244
+INFO:root:Processing entry 245: part_245
+INFO:root:Processing entry 246: part_246
+INFO:root:Processing entry 247: part_247
+INFO:root:Processing entry 248: part_248
+INFO:root:Processing entry 249: part_249
+INFO:root:Processing entry 250: part_250
+INFO:root:Processing entry 251: part_251
+INFO:root:Processing entry 252: part_252
+INFO:root:Processing entry 253: part_253
+INFO:root:Processing entry 254: part_254
+INFO:root:Processing entry 255: part_255
+INFO:root:Processing entry 256: part_256
+INFO:root:Processing entry 257: part_257
+INFO:root:Processing entry 258: part_258
+INFO:root:Processing entry 259: part_259
+INFO:root:Processing entry 260: part_260
+INFO:root:Processing entry 261: part_261
+INFO:root:Processing entry 262: part_262
+INFO:root:Processing entry 263: part_263
+INFO:root:Processing entry 264: part_264
+INFO:root:Processing entry 265: part_265
+INFO:root:Processing entry 266: part_266
+INFO:root:Processing entry 267: part_267
+INFO:root:Processing entry 268: part_268
+INFO:root:Processing entry 269: part_269
+INFO:root:Processing entry 270: part_270
+INFO:root:Processing entry 271: part_271
+INFO:root:Processing entry 272: part_272
+INFO:root:Processing entry 273: part_273
+INFO:root:Processing entry 274: part_274
+INFO:root:Processing entry 275: part_275
+INFO:root:Processing entry 276: part_276
+INFO:root:Processing entry 277: part_277
+INFO:root:Processing entry 278: part_278
+INFO:root:Processing entry 279: part_279
+INFO:root:Processing entry 280: part_280
+INFO:root:Processing entry 281: part_281
+INFO:root:Processing entry 282: part_282
+INFO:root:Processing entry 283: part_283
+INFO:root:Processing entry 284: part_284
+INFO:root:Processing entry 285: part_285
+INFO:root:Processing entry 286: part_286
+INFO:root:Processing entry 287: part_287
+INFO:root:Processing entry 288: part_288
+INFO:root:Processing entry 289: part_289
+INFO:root:Processing entry 290: part_290
+INFO:root:Processing entry 291: part_291
+INFO:root:Processing entry 292: part_292
+INFO:root:Processing entry 293: part_293
+INFO:root:Processing entry 294: part_294
+INFO:root:Processing entry 295: part_295
+INFO:root:Processing entry 296: part_296
+INFO:root:Processing entry 297: part_297
+INFO:root:Processing entry 298: part_298
+INFO:root:Processing entry 299: part_299
+INFO:root:Processing entry 300: part_300
+INFO:root:Processing entry 301: part_301
+INFO:root:Processing entry 302: part_302
+INFO:root:Processing entry 303: part_303
+INFO:root:Processing entry 304: part_304
+INFO:root:Processing entry 305: part_305
+INFO:root:Processing entry 306: part_306
+INFO:root:Processing entry 307: part_307
+INFO:root:Processing entry 308: part_308
+INFO:root:Processing entry 309: part_309
+INFO:root:Processing entry 310: part_310
+INFO:root:Processing entry 311: part_311
+INFO:root:Processing entry 312: part_312
+INFO:root:Processing entry 313: part_313
+INFO:root:Processing entry 314: part_314
+INFO:root:Processing entry 315: part_315
+INFO:root:Processing entry 316: part_316
+INFO:root:Processing entry 317: part_317
+INFO:root:Processing entry 318: part_318
+INFO:root:Processing entry 319: part_319
+INFO:root:Processing entry 320: part_320
+INFO:root:Processing entry 321: part_321
+INFO:root:Processing entry 322: part_322
+INFO:root:Processing entry 323: part_323
+INFO:root:Processing entry 324: part_324
+INFO:root:Processing entry 325: part_325
+INFO:root:Processing entry 326: part_326
+INFO:root:Processing entry 327: part_327
+INFO:root:Processing entry 328: part_328
+INFO:root:Processing entry 329: part_329
+INFO:root:Processing entry 330: part_330
+INFO:root:Processing entry 331: part_331
+INFO:root:Processing entry 332: part_332
+INFO:root:Processing entry 333: part_333
+INFO:root:Processing entry 334: part_334
+INFO:root:Processing entry 335: part_335
+INFO:root:Processing entry 336: part_336
+INFO:root:Processing entry 337: part_337
+INFO:root:Processing entry 338: part_338
+INFO:root:Processing entry 339: part_339
+INFO:root:Processing entry 340: part_340
+INFO:root:Processing entry 341: part_341
+INFO:root:Processing entry 342: part_342
+INFO:root:Processing entry 343: part_343
+INFO:root:Processing entry 344: part_344
+INFO:root:Processing entry 345: part_345
+INFO:root:Processing entry 346: part_346
+INFO:root:Processing entry 347: part_347
+INFO:root:Processing entry 348: part_348
+INFO:root:Processing entry 349: part_349
+INFO:root:Processing entry 350: part_350
+INFO:root:Processing entry 351: part_351
+INFO:root:Processing entry 352: part_352
+INFO:root:Processing entry 353: part_353
+INFO:root:Processing entry 354: part_354
+INFO:root:Processing entry 355: part_355
+INFO:root:Processing entry 356: part_356
+INFO:root:Processing entry 357: part_357
+INFO:root:Processing entry 358: part_358
+INFO:root:Processing entry 359: part_359
+INFO:root:Processing entry 360: part_360
+INFO:root:Processing entry 361: part_361
+INFO:root:Processing entry 362: part_362
+INFO:root:Processing entry 363: part_363
+INFO:root:Processing entry 364: part_364
+INFO:root:Processing entry 365: part_365
+INFO:root:Processing entry 366: part_366
+INFO:root:Processing entry 367: part_367
+INFO:root:Processing entry 368: part_368
+INFO:root:Processing entry 369: part_369
+INFO:root:Processing entry 370: part_370
+INFO:root:Processing entry 371: part_371
+INFO:root:Processing entry 372: part_372
+INFO:root:Processing entry 373: part_373
+INFO:root:Processing entry 374: part_374
+INFO:root:Processing entry 375: part_375
+INFO:root:Processing entry 376: part_376
+INFO:root:Processing entry 377: part_377
+INFO:root:Processing entry 378: part_378
+INFO:root:Processing entry 379: part_379
+INFO:root:Processing entry 380: part_380
+INFO:root:Processing entry 381: part_381
+INFO:root:Processing entry 382: part_382
+INFO:root:Processing entry 383: part_383
+INFO:root:Processing entry 384: part_384
+INFO:root:Processing entry 385: part_385
+INFO:root:Processing entry 386: part_386
+INFO:root:Processing entry 387: part_387
+INFO:root:Processing entry 388: part_388
+INFO:root:Processing entry 389: part_389
+INFO:root:Processing entry 390: part_390
+INFO:root:Processing entry 391: part_391
+INFO:root:Processing entry 392: part_392
+INFO:root:Processing entry 393: part_393
+INFO:root:Processing entry 394: part_394
+INFO:root:Processing entry 395: part_395
+INFO:root:Processing entry 396: part_396
+INFO:root:Processing entry 397: part_397
+INFO:root:Processing entry 398: part_398
+INFO:root:Processing entry 399: part_399
+INFO:root:Processing entry 400: part_400
+INFO:root:Processing entry 401: part_401
+INFO:root:Processing entry 402: part_402
+INFO:root:Processing entry 403: part_403
+INFO:root:Processing entry 404: part_404
+INFO:root:Processing entry 405: part_405
+INFO:root:Processing entry 406: part_406
+INFO:root:Processing entry 407: part_407
+INFO:root:Processing entry 408: part_408
+INFO:root:Processing entry 409: part_409
+INFO:root:Processing entry 410: part_410
+INFO:root:Processing entry 411: part_411
+INFO:root:Processing entry 412: part_412
+INFO:root:Processing entry 413: part_413
+INFO:root:Processing entry 414: part_414
+INFO:root:Processing entry 415: part_415
+INFO:root:Processing entry 416: part_416
+INFO:root:Processing entry 417: part_417
+INFO:root:Processing entry 418: part_418
+INFO:root:Processing entry 419: part_419
+INFO:root:Processing entry 420: part_420
+INFO:root:Processing entry 421: part_421
+INFO:root:Processing entry 422: part_422
+INFO:root:Processing entry 423: part_423
+INFO:root:Processing entry 424: part_424
+INFO:root:Processing entry 425: part_425
+INFO:root:Processing entry 426: part_426
+INFO:root:Processing entry 427: part_427
+INFO:root:Processing entry 428: part_428
+INFO:root:Processing entry 429: part_429
+INFO:root:Processing entry 430: part_430
+INFO:root:Processing entry 431: part_431
+INFO:root:Processing entry 432: part_432
+INFO:root:Processing entry 433: part_433
+INFO:root:Processing entry 434: part_434
+INFO:root:Processing entry 435: part_435
+INFO:root:Processing entry 436: part_436
+INFO:root:Processing entry 437: part_437
+INFO:root:Processing entry 438: part_438
+INFO:root:Processing entry 439: part_439
+INFO:root:Processing entry 440: part_440
+INFO:root:Processing entry 441: part_441
+INFO:root:Processing entry 442: part_442
+INFO:root:Processing entry 443: part_443
+INFO:root:Processing entry 444: part_444
+INFO:root:Processing entry 445: part_445
+INFO:root:Processing entry 446: part_446
+INFO:root:Processing entry 447: part_447
+INFO:root:Processing entry 448: part_448
+INFO:root:Processing entry 449: part_449
+INFO:root:Processing entry 450: part_450
+INFO:root:Processing entry 451: part_451
+INFO:root:Processing entry 452: part_452
+INFO:root:Processing entry 453: part_453
+INFO:root:Processing entry 454: part_454
+INFO:root:Processing entry 455: part_455
+INFO:root:Processing entry 456: part_456
+INFO:root:Processing entry 457: part_457
+INFO:root:Processing entry 458: part_458
+INFO:root:Processing entry 459: part_459
+INFO:root:Processing entry 460: part_460
+INFO:root:Processing entry 461: part_461
+INFO:root:Processing entry 462: part_462
+INFO:root:Processing entry 463: part_463
+INFO:root:Processing entry 464: part_464
+INFO:root:Processing entry 465: part_465
+INFO:root:Processing entry 466: part_466
+INFO:root:Processing entry 467: part_467
+INFO:root:Processing entry 468: part_468
+INFO:root:Processing entry 469: part_469
+INFO:root:Processing entry 470: part_470
+INFO:root:Processing entry 471: part_471
+INFO:root:Processing entry 472: part_472
+INFO:root:Processing entry 473: part_473
+INFO:root:Processing entry 474: part_474
+INFO:root:Processing entry 475: part_475
+INFO:root:Processing entry 476: part_476
+INFO:root:Processing entry 477: part_477
+INFO:root:Processing entry 478: part_478
+INFO:root:Processing entry 479: part_479
+INFO:root:Processing entry 480: part_480
+INFO:root:Processing entry 481: part_481
+INFO:root:Processing entry 482: part_482
+INFO:root:Processing entry 483: part_483
+INFO:root:Processing entry 484: part_484
+INFO:root:Processing entry 485: part_485
+INFO:root:Processing entry 486: part_486
+INFO:root:Processing entry 487: part_487
+INFO:root:Processing entry 488: part_488
+INFO:root:Processing entry 489: part_489
+INFO:root:Processing entry 490: part_490
+INFO:root:Processing entry 491: part_491
+INFO:root:Processing entry 492: part_492
+INFO:root:Processing entry 493: part_493
+INFO:root:Processing entry 494: part_494
+INFO:root:Processing entry 495: part_495
+INFO:root:Processing entry 496: part_496
+INFO:root:Processing entry 497: part_497
+INFO:root:Processing entry 498: part_498
+INFO:root:Processing entry 499: part_499
+INFO:root:Processing entry 500: part_500
+INFO:root:Processing entry 501: part_501
+INFO:root:Processing entry 502: part_502
+INFO:root:Processing entry 503: part_503
+INFO:root:Processing entry 504: part_504
+INFO:root:Processing entry 505: part_505
+INFO:root:Processing entry 506: part_506
+INFO:root:Processing entry 507: part_507
+INFO:root:Processing entry 508: part_508
+INFO:root:Processing entry 509: part_509
+INFO:root:Processing entry 510: part_510
+INFO:root:Processing entry 511: part_511
+INFO:root:Processing entry 512: part_512
+INFO:root:Processing entry 513: part_513
+INFO:root:Processing entry 514: part_514
+INFO:root:Processing entry 515: part_515
+INFO:root:Processing entry 516: part_516
+INFO:root:Processing entry 517: part_517
+INFO:root:Processing entry 518: part_518
+INFO:root:Processing entry 519: part_519
+INFO:root:Processing entry 520: part_520
+INFO:root:Processing entry 521: part_521
+INFO:root:Processing entry 522: part_522
+INFO:root:Processing entry 523: part_523
+INFO:root:Processing entry 524: part_524
+INFO:root:Processing entry 525: part_525
+INFO:root:Processing entry 526: part_526
+INFO:root:Processing entry 527: part_527
+INFO:root:Processing entry 528: part_528
+INFO:root:Processing entry 529: part_529
+INFO:root:Processing entry 530: part_530
+INFO:root:Processing entry 531: part_531
+INFO:root:Processing entry 532: part_532
+INFO:root:Processing entry 533: part_533
+INFO:root:Processing entry 534: part_534
+INFO:root:Processing entry 535: part_535
+INFO:root:Processing entry 536: part_536
+INFO:root:Processing entry 537: part_537
+INFO:root:Processing entry 538: part_538
+INFO:root:Processing entry 539: part_539
+INFO:root:Processing entry 540: part_540
+INFO:root:Processing entry 541: part_541
+INFO:root:Processing entry 542: part_542
+INFO:root:Processing entry 543: part_543
+INFO:root:Processing entry 544: part_544
+INFO:root:Processing entry 545: part_545
+INFO:root:Processing entry 546: part_546
+INFO:root:Processing entry 547: part_547
+INFO:root:Processing entry 548: part_548
+INFO:root:Processing entry 549: part_549
+INFO:root:Processing entry 550: part_550
+INFO:root:Processing entry 551: part_551
+INFO:root:Processing entry 552: part_552
+INFO:root:Processing entry 553: part_553
+INFO:root:Processing entry 554: part_554
+INFO:root:Processing entry 555: part_555
+INFO:root:Processing entry 556: part_556
+INFO:root:Processing entry 557: part_557
+INFO:root:Processing entry 558: part_558
+INFO:root:Processing entry 559: part_559
+INFO:root:Processing entry 560: part_560
+INFO:root:Processing entry 561: part_561
+INFO:root:Processing entry 562: part_562
+INFO:root:Processing entry 563: part_563
+INFO:root:Processing entry 564: part_564
+INFO:root:Processing entry 565: part_565
+INFO:root:Processing entry 566: part_566
+INFO:root:Processing entry 567: part_567
+INFO:root:Processing entry 568: part_568
+INFO:root:Processing entry 569: part_569
+INFO:root:Processing entry 570: part_570
+INFO:root:Processing entry 571: part_571
+INFO:root:Processing entry 572: part_572
+INFO:root:Processing entry 573: part_573
+INFO:root:Processing entry 574: part_574
+INFO:root:Processing entry 575: part_575
+INFO:root:Processing entry 576: part_576
+INFO:root:Processing entry 577: part_577
+INFO:root:Processing entry 578: part_578
+INFO:root:Processing entry 579: part_579
+INFO:root:Processing entry 580: part_580
+INFO:root:Processing entry 581: part_581
+INFO:root:Processing entry 582: part_582
+INFO:root:Processing entry 583: part_583
+INFO:root:Processing entry 584: part_584
+INFO:root:Processing entry 585: part_585
+INFO:root:Processing entry 586: part_586
+INFO:root:Processing entry 587: part_587
+INFO:root:Processing entry 588: part_588
+INFO:root:Processing entry 589: part_589
+INFO:root:Processing entry 590: part_590
+INFO:root:Processing entry 591: part_591
+INFO:root:Processing entry 592: part_592
+INFO:root:Processing entry 593: part_593
+INFO:root:Processing entry 594: part_594
+INFO:root:Processing entry 595: part_595
+INFO:root:Processing entry 596: part_596
+INFO:root:Processing entry 597: part_597
+INFO:root:Processing entry 598: part_598
+INFO:root:Processing entry 599: part_599
+INFO:root:Processing entry 600: part_600
+INFO:root:Processing entry 601: part_601
+INFO:root:Processing entry 602: part_602
+INFO:root:Processing entry 603: part_603
+INFO:root:Processing entry 604: part_604
+INFO:root:Processing entry 605: part_605
+INFO:root:Processing entry 606: part_606
+INFO:root:Processing entry 607: part_607
+INFO:root:Processing entry 608: part_608
+INFO:root:Processing entry 609: part_609
+INFO:root:Processing entry 610: part_610
+INFO:root:Processing entry 611: part_611
+INFO:root:Processing entry 612: part_612
+INFO:root:Processing entry 613: part_613
+INFO:root:Processing entry 614: part_614
+INFO:root:Processing entry 615: part_615
+INFO:root:Processing entry 616: part_616
+INFO:root:Processing entry 617: part_617
+INFO:root:Processing entry 618: part_618
+INFO:root:Processing entry 619: part_619
+INFO:root:Processing entry 620: part_620
+INFO:root:Processing entry 621: part_621
+INFO:root:Processing entry 622: part_622
+INFO:root:Processing entry 623: part_623
+INFO:root:Processing entry 624: part_624
+INFO:root:Processing entry 625: part_625
+INFO:root:Processing entry 626: part_626
+INFO:root:Processing entry 627: part_627
+INFO:root:Processing entry 628: part_628
+INFO:root:Processing entry 629: part_629
+INFO:root:Processing entry 630: part_630
+INFO:root:Processing entry 631: part_631
+INFO:root:Processing entry 632: part_632
+INFO:root:Processing entry 633: part_633
+INFO:root:Processing entry 634: part_634
+INFO:root:Processing entry 635: part_635
+INFO:root:Processing entry 636: part_636
+INFO:root:Processing entry 637: part_637
+INFO:root:Processing entry 638: part_638
+INFO:root:Processing entry 639: part_639
+INFO:root:Processing entry 640: part_640
+INFO:root:Processing entry 641: part_641
+INFO:root:Processing entry 642: part_642
+INFO:root:Processing entry 643: part_643
+INFO:root:Processing entry 644: part_644
+INFO:root:Processing entry 645: part_645
+INFO:root:Processing entry 646: part_646
+INFO:root:Processing entry 647: part_647
+INFO:root:Processing entry 648: part_648
+INFO:root:Processing entry 649: part_649
+INFO:root:Processing entry 650: part_650
+INFO:root:Processing entry 651: part_651
+INFO:root:Processing entry 652: part_652
+INFO:root:Processing entry 653: part_653
+INFO:root:Processing entry 654: part_654
+INFO:root:Processing entry 655: part_655
+INFO:root:Processing entry 656: part_656
+INFO:root:Processing entry 657: part_657
+INFO:root:Processing entry 658: part_658
+INFO:root:Processing entry 659: part_659
+INFO:root:Processing entry 660: part_660
+INFO:root:Processing entry 661: part_661
+INFO:root:Processing entry 662: part_662
+INFO:root:Processing entry 663: part_663
+INFO:root:Processing entry 664: part_664
+INFO:root:Processing entry 665: part_665
+INFO:root:Processing entry 666: part_666
+INFO:root:Processing entry 667: part_667
+INFO:root:Processing entry 668: part_668
+INFO:root:Processing entry 669: part_669
+INFO:root:Processing entry 670: part_670
+INFO:root:Processing entry 671: part_671
+INFO:root:Processing entry 672: part_672
+INFO:root:Processing entry 673: part_673
+INFO:root:Processing entry 674: part_674
+INFO:root:Processing entry 675: part_675
+INFO:root:Processing entry 676: part_676
+INFO:root:Processing entry 677: part_677
+INFO:root:Processing entry 678: part_678
+INFO:root:Processing entry 679: part_679
+INFO:root:Processing entry 680: part_680
+INFO:root:Processing entry 681: part_681
+INFO:root:Processing entry 682: part_682
+INFO:root:Processing entry 683: part_683
+INFO:root:Processing entry 684: part_684
+INFO:root:Processing entry 685: part_685
+INFO:root:Processing entry 686: part_686
+INFO:root:Processing entry 687: part_687
+INFO:root:Processing entry 688: part_688
+INFO:root:Processing entry 689: part_689
+INFO:root:Processing entry 690: part_690
+INFO:root:Processing entry 691: part_691
+INFO:root:Processing entry 692: part_692
+INFO:root:Processing entry 693: part_693
+INFO:root:Processing entry 694: part_694
+INFO:root:Processing entry 695: part_695
+INFO:root:Processing entry 696: part_696
+INFO:root:Processing entry 697: part_697
+INFO:root:Processing entry 698: part_698
+INFO:root:Processing entry 699: part_699
+INFO:root:Processing entry 700: part_700
+INFO:root:Processing entry 701: part_701
+INFO:root:Processing entry 702: part_702
+INFO:root:Processing entry 703: part_703
+INFO:root:Processing entry 704: part_704
+INFO:root:Processing entry 705: part_705
+INFO:root:Processing entry 706: part_706
+INFO:root:Processing entry 707: part_707
+INFO:root:Processing entry 708: part_708
+INFO:root:Processing entry 709: part_709
+INFO:root:Processing entry 710: part_710
+INFO:root:Processing entry 711: part_711
+INFO:root:Processing entry 712: part_712
+INFO:root:Processing entry 713: part_713
+INFO:root:Processing entry 714: part_714
+INFO:root:Processing entry 715: part_715
+INFO:root:Processing entry 716: part_716
+INFO:root:Processing entry 717: part_717
+INFO:root:Processing entry 718: part_718
+INFO:root:Processing entry 719: part_719
+INFO:root:Processing entry 720: part_720
+INFO:root:Processing entry 721: part_721
+INFO:root:Processing entry 722: part_722
+INFO:root:Processing entry 723: part_723
+INFO:root:Processing entry 724: part_724
+INFO:root:Processing entry 725: part_725
+INFO:root:Processing entry 726: part_726
+INFO:root:Processing entry 727: part_727
+INFO:root:Processing entry 728: part_728
+INFO:root:Processing entry 729: part_729
+INFO:root:Processing entry 730: part_730
+INFO:root:Processing entry 731: part_731
+INFO:root:Processing entry 732: part_732
+INFO:root:Processing entry 733: part_733
+INFO:root:Processing entry 734: part_734
+INFO:root:Processing entry 735: part_735
+INFO:root:Processing entry 736: part_736
+INFO:root:Processing entry 737: part_737
+INFO:root:Processing entry 738: part_738
+INFO:root:Processing entry 739: part_739
+INFO:root:Processing entry 740: part_740
+INFO:root:Processing entry 741: part_741
+INFO:root:Processing entry 742: part_742
+INFO:root:Processing entry 743: part_743
+INFO:root:Processing entry 744: part_744
+INFO:root:Processing entry 745: part_745
+INFO:root:Processing entry 746: part_746
+INFO:root:Processing entry 747: part_747
+INFO:root:Processing entry 748: part_748
+INFO:root:Processing entry 749: part_749
+INFO:root:Processing entry 750: part_750
+INFO:root:Processing entry 751: part_751
+INFO:root:Processing entry 752: part_752
+INFO:root:Processing entry 753: part_753
+INFO:root:Processing entry 754: part_754
+INFO:root:Processing entry 755: part_755
+INFO:root:Processing entry 756: part_756
+INFO:root:Processing entry 757: part_757
+INFO:root:Processing entry 758: part_758
+INFO:root:Processing entry 759: part_759
+INFO:root:Processing entry 760: part_760
+INFO:root:Processing entry 761: part_761
+INFO:root:Processing entry 762: part_762
+INFO:root:Processing entry 763: part_763
+INFO:root:Processing entry 764: part_764
+INFO:root:Processing entry 765: part_765
+INFO:root:Processing entry 766: part_766
+INFO:root:Processing entry 767: part_767
+INFO:root:Processing entry 768: part_768
+INFO:root:Processing entry 769: part_769
+INFO:root:Processing entry 770: part_770
+INFO:root:Processing entry 771: part_771
+INFO:root:Processing entry 772: part_772
+INFO:root:Processing entry 773: part_773
+INFO:root:Processing entry 774: part_774
+INFO:root:Processing entry 775: part_775
+INFO:root:Processing entry 776: part_776
+INFO:root:Processing entry 777: part_777
+INFO:root:Processing entry 778: part_778
+INFO:root:Processing entry 779: part_779
+INFO:root:Processing entry 780: part_780
+INFO:root:Processing entry 781: part_781
+INFO:root:Processing entry 782: part_782
+INFO:root:Processing entry 783: part_783
+INFO:root:Processing entry 784: part_784
+INFO:root:Processing entry 785: part_785
+INFO:root:Processing entry 786: part_786
+INFO:root:Processing entry 787: part_787
+INFO:root:Processing entry 788: part_788
+INFO:root:Processing entry 789: part_789
+INFO:root:Processing entry 790: part_790
+INFO:root:Processing entry 791: part_791
+INFO:root:Processing entry 792: part_792
+INFO:root:Processing entry 793: part_793
+INFO:root:Processing entry 794: part_794
+INFO:root:Processing entry 795: part_795
+INFO:root:Processing entry 796: part_796
+INFO:root:Processing entry 797: part_797
+INFO:root:Processing entry 798: part_798
+INFO:root:Processing entry 799: part_799
+INFO:root:Processing entry 800: part_800
+INFO:root:Processing entry 801: part_801
+INFO:root:Processing entry 802: part_802
+INFO:root:Processing entry 803: part_803
+INFO:root:Processing entry 804: part_804
+INFO:root:Processing entry 805: part_805
+INFO:root:Processing entry 806: part_806
+INFO:root:Processing entry 807: part_807
+INFO:root:Processing entry 808: part_808
+INFO:root:Processing entry 809: part_809
+INFO:root:Processing entry 810: part_810
+INFO:root:Processing entry 811: part_811
+INFO:root:Processing entry 812: part_812
+INFO:root:Processing entry 813: part_813
+INFO:root:Processing entry 814: part_814
+INFO:root:Processing entry 815: part_815
+INFO:root:Processing entry 816: part_816
+INFO:root:Processing entry 817: part_817
+INFO:root:Processing entry 818: part_818
+INFO:root:Processing entry 819: part_819
+INFO:root:Processing entry 820: part_820
+INFO:root:Processing entry 821: part_821
+INFO:root:Processing entry 822: part_822
+INFO:root:Processing entry 823: part_823
+INFO:root:Processing entry 824: part_824
+INFO:root:Processing entry 825: part_825
+INFO:root:Processing entry 826: part_826
+INFO:root:Processing entry 827: part_827
+INFO:root:Processing entry 828: part_828
+INFO:root:Processing entry 829: part_829
+INFO:root:Processing entry 830: part_830
+INFO:root:Processing entry 831: part_831
+INFO:root:Processing entry 832: part_832
+INFO:root:Processing entry 833: part_833
+INFO:root:Processing entry 834: part_834
+INFO:root:Processing entry 835: part_835
+INFO:root:Processing entry 836: part_836
+INFO:root:Processing entry 837: part_837
+INFO:root:Processing entry 838: part_838
+INFO:root:Processing entry 839: part_839
+INFO:root:Processing entry 840: part_840
+INFO:root:Processing entry 841: part_841
+INFO:root:Processing entry 842: part_842
+INFO:root:Processing entry 843: part_843
+INFO:root:Processing entry 844: part_844
+INFO:root:Processing entry 845: part_845
+INFO:root:Processing entry 846: part_846
+INFO:root:Processing entry 847: part_847
+INFO:root:Processing entry 848: part_848
+INFO:root:Processing entry 849: part_849
+INFO:root:Processing entry 850: part_850
+INFO:root:Processing entry 851: part_851
+INFO:root:Processing entry 852: part_852
+INFO:root:Processing entry 853: part_853
+INFO:root:Processing entry 854: part_854
+INFO:root:Processing entry 855: part_855
+INFO:root:Processing entry 856: part_856
+INFO:root:Processing entry 857: part_857
+INFO:root:Processing entry 858: part_858
+INFO:root:Processing entry 859: part_859
+INFO:root:Processing entry 860: part_860
+INFO:root:Processing entry 861: part_861
+INFO:root:Processing entry 862: part_862
+INFO:root:Processing entry 863: part_863
+INFO:root:Processing entry 864: part_864
+INFO:root:Processing entry 865: part_865
+INFO:root:Processing entry 866: part_866
+INFO:root:Processing entry 867: part_867
+INFO:root:Processing entry 868: part_868
+INFO:root:Processing entry 869: part_869
+INFO:root:Processing entry 870: part_870
+INFO:root:Processing entry 871: part_871
+INFO:root:Processing entry 872: part_872
+INFO:root:Processing entry 873: part_873
+INFO:root:Processing entry 874: part_874
+INFO:root:Processing entry 875: part_875
+INFO:root:Processing entry 876: part_876
+INFO:root:Processing entry 877: part_877
+INFO:root:Processing entry 878: part_878
+INFO:root:Processing entry 879: part_879
+INFO:root:Processing entry 880: part_880
+INFO:root:Processing entry 881: part_881
+INFO:root:Processing entry 882: part_882
+INFO:root:Processing entry 883: part_883
+INFO:root:Processing entry 884: part_884
+INFO:root:Processing entry 885: part_885
+INFO:root:Processing entry 886: part_886
+INFO:root:Processing entry 887: part_887
+INFO:root:Processing entry 888: part_888
+INFO:root:Processing entry 889: part_889
+INFO:root:Processing entry 890: part_890
+INFO:root:Processing entry 891: part_891
+INFO:root:Processing entry 892: part_892
+INFO:root:Processing entry 893: part_893
+INFO:root:Processing entry 894: part_894
+INFO:root:Processing entry 895: part_895
+INFO:root:Processing entry 896: part_896
+INFO:root:Processing entry 897: part_897
+INFO:root:Processing entry 898: part_898
+INFO:root:Processing entry 899: part_899
+INFO:root:Processing entry 900: part_900
+INFO:root:Processing entry 901: part_901
+INFO:root:Processing entry 902: part_902
+INFO:root:Processing entry 903: part_903
+INFO:root:Processing entry 904: part_904
+INFO:root:Processing entry 905: part_905
+INFO:root:Processing entry 906: part_906
+INFO:root:Processing entry 907: part_907
+INFO:root:Processing entry 908: part_908
+INFO:root:Processing entry 909: part_909
+INFO:root:Processing entry 910: part_910
+INFO:root:Processing entry 911: part_911
+INFO:root:Processing entry 912: part_912
+INFO:root:Processing entry 913: part_913
+INFO:root:Processing entry 914: part_914
+INFO:root:Processing entry 915: part_915
+INFO:root:Processing entry 916: part_916
+INFO:root:Processing entry 917: part_917
+INFO:root:Processing entry 918: part_918
+INFO:root:Processing entry 919: part_919
+INFO:root:Processing entry 920: part_920
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:08:12] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: <think>
+Okay, so I need to figure out the laws that regulate changes in Tunisia. Let me start by going through the legal texts provided.
+
+First, there's the Banque Centrale de Tunisie's regulation. It mentions something about executing a presentism according to a finance minister’s notice and dealing with external changes and commerce. That sounds like it might relate to central banking regulations or external market adjustments, which could be part of broader financial regulation.
+
+Next, I see the code of changes and commerce extérieur is referenced in several parts. The user provided a snippet where the Banque Centrale is mentioned as being responsible for executing presentisms according to a finance minister’s notice. This seems to fall under the Code des Changes et du Commerce Extérieur.
+
+Looking further down, there's a Law: Code des Changes et du Commerce Extérieur, Article: 3, Section: N/A, Chunk: part_405, Page: 105. The text here talks about the Banque Centrale taking into account changes from external parties like the tuneville government or external institutions when promoting investments in devises and non-refunded instruments. This is likely central to how the Banque Centrale handles external changes and their impact on its own investments.
+
+Then, another part under "Code des Changes et du Commerce Extérieur" mentions ISDA conventions for agricultural agreements, which seems related but not directly about changes in Tunisia. The next section talks about investments by presentism promulgated by the 76-18 law, involving commerce extérieur, taking into account external parties, and allowing investments in devises of non-refunded type. This aligns with the previous point.
+
+Another part under the same heading mentions transactions between Tunisia and extraterrestrial entities and includes a section on investments made by the central bank under the 76-18 law, involving commerce extérieur, considering external parties, etc., allowing investments in devises of non-refunded type. This seems to be consistent with what I saw before.
+
+There's also mention of ISDA conventions for agricultural businesses, which is separate but again related to changes and commerce extérieur.
+
+Putting it all together, the main laws are the Code des Changes et du Commerce Extérieur, specifically the Articles 3, N/A, and part_405. The related sections include handling external changes, investments in devises of non-refunded type, and interactions with other agreements like ISDA.
+</think>
+
+According to the Legal Texts provided, the primary laws governing changes in Tunisia are:
+
+1. **Code des Changes et du Commerce Extérieur (Law: Code des_changes et du commerce extérieur)**  
+   - **Article: 3, Section: N/A, Chunk: part_405**  
+     This section outlines how the Banque Centrale de Tunisie handles external changes and their impact on its investments in devises of non-refunded type. It emphasizes considering external parties when promoting investments.
+
+2. **ISDA (Intermédiaires Agréés)**  
+   - **Part: 45**  
+     ISDA conventions are mentioned, which deal with agricultural businesses and their transactions between Tunisia and other external entities.
+
+These laws together address financial regulation, investment management, and handling external changes in the context of Tunisia's economic system.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:08:39] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:27:58] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: Final Answer (English):**, French: <think>
+Alright, the user is asking about the fundamental laws regulating changes in Tunisia. I need to figure out which specific laws are most relevant here.
+
+First, I remember that there's a significant law related to currency changes. It's Code des Changes et du Commerce Extérieur, Law 76-18 from January 1976. This one is probably the cornerstone for all currency-related regulations in Tunisia.
+
+Next, there are two important laws dealing with interest-bearing parties. The first one is Code des Organiments de Placement Collectif, which was introduced in 2001 by Law No. 2001-83. It governs institutional arrangements like associations and cooperatives. 
+
+The second law I recall is about foreign investment in Tunisia. That's Code des Investissements en Impôts Intermésdaux, which was introduced in May 1993 as Code No. 93-48. This helps regulate foreign investors entering the country.
+
+I should also consider any related laws that might influence changes in Tunisian financial systems. For example, the Law on Currency Changes (Law 76-18) ensures that central banks can manage their currency rates effectively, which affects everything from inflation to trade balances.
+
+I need to make sure I'm not missing any other key laws. The user also mentioned ISDA as a reference for conventions under the Code of Change and Export External Rules, but since they asked specifically about the fundamental laws governing changes in Tunisie, I should focus on the ones above.
+
+Putting it all together, I'll outline each law with a brief explanation to ensure clarity. This will help the user understand how these laws collectively regulate financial systems in Tunisia.
+</think>
+
+Les lois fondamentales qui régissent les changes en Tunisia sont:
+
+1. **La Loi n° 76-18 du 21 January 1976 sur la modification et codification des législation des changes et du commerce extérieur**  
+   Cette loi defini les modifications et leodification de la législation des changes et du commerce extérieur, avec une particularité pour les changes en Tunisia. Elle est la base principale pour les lois concernant les changements financiers dans la région Tunisienne.
+
+2. **La Loi n° 93-48 du 3 May 1993 sur le cadre ISDA**  
+   Cette loi modifie etodification la framework ISDA (International Swaps Dealer Association, Code de Changes et du Commerce Extérieur) pour les associations de l' interchange. Elle définit les conditions d'utilisation des associations de l' interchange en Tunisia.
+
+3. **La Loi n° 2016-35 sur la Banque Centrale de Tunisie**  
+   Cette loi fixe le statut de la Banque Centrale de Tunisie, assujettie à certaines contraintes visant à éliminer les fluctuations circulaires du monté des banques centrales. Elle est un outil clair pour contrôler l'équilibre économique dans la région.
+
+4. **La Loi n° 2016-48 sur le management des investissements en impôts intermédiaires**  
+   Cette loi fixe les lois concernant les investissements en impôts intermédiaires, avec une concentration sur les investissements locaux et les associations de l' interchange. Elle est essentielle pour contrôler la structure financière du pays.
+
+Ces lois, entre themselves et les lois suivantes, regissent le management des changes financières dans Tunisia, permettant d'éviter les problèmes économiques et politiques liés aux fluctuations circulaires et aux attentes de liberté sur les investissements.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:28:31] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: bonjour
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: Final Answer (English): No specific regulation found in the provided data., French: Réponse finale (Français) : Aucune réglementation spécifique trouvée dans les données fournines.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:29:52] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:38:54] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: No specific regulation found in the provided data., French: Aucune réglementation spécifique trouvée dans les données fournies.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:39:18] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:39:28] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: No specific regulation found in the provided data., French: Aucune réglementation spécifique trouvée dans les données fournies.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:39:44] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:41:28] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: Final Answer (English):', citing each law with its respective page numbers., French: Aucune réglementation spécifique trouvée dans les données fournies.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:41:50] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:42:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:42:10] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: <think>
+Okay, so the user is asking about the fundamental laws governing changes in Tunisia. They provided several legal texts from the Central Bank of Tunisia and other related documents.
+
+First, I need to identify which laws are directly relevant. From the texts, there's a reference to Code des Changes et du Commerce Extérieur (Code CSX), which seems central since it's about changes between Tunisia and other countries or regions. It references several key articles that outline the rules for changes.
+
+Looking at the provided text, I see mentions of the present change directive (LO 76-18), the convention framework (LO 45), and some related articles. The main law is LO 76-18, which sets out the obligations for changes from Tunisia to other countries. This includes provisions on how these changes are applied, the types of contracts involved, and conditions for their implementation.
+
+Another relevant document is a decision dated 2011-10 regarding the acquisition of social equity shares by Tunisiasian companies. This falls under the context of CODE CSX obligations, which might be part of the broader framework established in LO 76-18.
+
+I should also note that ISDA isn't directly involved here; it's a separate convention under the Code. The focus is on the Code of Changes and Commerce_exterior regulations, specifically the provisions from LO 76-18.
+
+In summary, the fundamental laws governing changes in Tunisia are:
+
+1. Code des Changes et du Commerce Extérieur (Code CSX)
+2. LO 76-18: directive sur les changements de Tarif et d'Exécution
+3. Loi n°45: Code sur le cadre intermédiaire agréés
+
+These documents outline the obligations, types of contracts, and conditions for changes between Tunisia and other countries or regions.
+</think>
+
+According to the provided legal texts, the fundamental laws governing changes in Tunisia are:
+
+1. **Code des Changes et du Commerce Extérieur (Code CSX)**  
+   This is the central document that establishes the framework for changes between Tunisia and other countries or regions. It outlines obligations, types of contracts, and conditions for changes.
+
+2. **LO 76-18: Directive sur les changements de Tarif et d'Exécution**  
+   This directive sets out the obligations for changes from Tunisia to other countries, including obligations on present changes, the framework for these changes, and their implementation.
+
+3. **Loi n°45: Code sur le cadre intermédiaire agréés**  
+   This law outlines the framework for intermediary agreements in Tunisian economic transactions with external entities.
+
+These legal texts provide the fundamental regulations governing changes in Tunisia's foreign exchange system and commercial activities., French: <think>
+Alright, let me figure out how to respond to this query. The user is asking about the fundamental laws regulating changes in Tunisia. I see they've provided several pieces of legal text, but nothing related directly to changes.
+
+First, I need to identify which laws are relevant. Looking through the texts, the ones that mention changes or related regulations are:
+1. Article 76-18 from the Code des Changes et du Commerce Extérieur.
+2. The ISDA convention, even though it's a separate reference by the user.
+3. Laws on intermediary agreements (Agrés Intermédiaires) starting with Article 45.
+
+The user is specifically asking about the fundamental laws regulating changes, so I should focus on the ones that directly relate to regulation of changes. The Code of Changes and Commerce Extérieur is the primary source here because it covers regulations and obligations regarding changes in Tunisian institutions. 
+
+I should structure my response by first stating that these are the relevant laws. Then, explain each one briefly: starting with the Code of Changes for its comprehensive approach, followed by the ISDA as a reference, and finally the Intermediary Agreements under the Code.
+
+Since no additional information is provided in the texts, I'll conclude by directing the user to check those legal texts for specifics if needed.
+</think>
+
+Les lois fondamentales régissant les changes en Tunisie sont :
+
+1. **La Loi n° 76-18 du 21 January 1976 sur la regulation des changements** : Cette loi define les obligations et les procedures de répartition des coördonnées entre les institutions privates de Tunisia et leurs payants étrangers.
+
+2. **Le Loi sur l'ISDA (Intercytre des Scénario Divers pour les Agences du Commerce extérieur)** : L'ISDA, ou la convention subrégisterie internationale concernant la structure d'une agence extérieure, est une norme réelleisée pour réguler les relations entre Tunisie et les pays étrangers.
+
+3. **Les Loi sur les Agences Intermédiaires Agrées (Loi n° 45)** : Cet article define les normes pour le signification et la validité des associations intermédiaires agrées, qui jouent un rôle central dans les relations entre Tunisie et ses payants étrangers.
+
+Ces lois, en plus des textes juridiques fournies, sont les lois fondamentales régissant les changements en Tunisie.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:42:27] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales régissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:root:Response generated: English: Final Answer (English):**, French: <think>
+Alright, I need to figure out what the user is asking for. They provided some legal texts in French and want me to answer about the fundamental laws governing changes in Tunisia. 
+
+First, I'll read through each text carefully. The first one talks about the Central Bank of Tunisie being responsible for executing a present agreement according to the Change of Rate Act. It also mentions related laws like Code des Changes and Commerce Extérieur, which regulate interactions between Tunisia and external countries.
+
+The second text discusses ISDA conventions, which are standardized frameworks for international transactions involving derivatives. It's mentioned under a specific article in the main code.
+
+Then there are two more texts about investments by the Central Bank using present agreements from the 76-18 law. One is about companies taking part during initiation or capital growth, and the other involves social participation in placements like collectives. Both of these tie back to the Code of Changes and Commerce Extérieur.
+
+The last text updates the Banque Centrale de Tunisie by acquiring biens (residential properties) from Tunisia, which ties into the changes under the 2016-35 law about the bank's status.
+
+So, compiling this information, I need to identify the key laws. The main one seems to be Code des Changes and Commerce Extérieur, both of which are updated regularly. Then there's ISDA, specifically Article 45, related to their investment conventions. 
+
+I should present these in a clear order, perhaps starting with the most relevant ones first: the Code of Changes and Commerce Extérieur, then ISDA under its specific article. I'll make sure each law is explained briefly based on how it's referenced in the texts provided.
+</think>
+
+Les lois fondamentales régissant les changes en Tunisia sont :
+
+1. **La Loi du 2001-83 sur la Promuluration des Placements Collectives** : Cette loi, outil pour la promulgation de placements collectifs, est referenced dans le texte 74-196 et concerne les organizations de risks.
+
+2. **Le Code de Changes et du Commerce Extérieur** : Cela, actuellement en vigueur avec des ré modifications, est reference dans plusieurs texts (Code du 1976, Code du 1993, etc.) et concerne les interactions entre Tunisia et pays étrangers.
+
+3. **Le Loi n°45-098 sur les Conventions ISDA** : Cela concerne les ISDA conventions, qui figurent dans le texte 46-278 et sont utilisées par les investissements en derives du Ministre des Finances.
+
+Ainsi, les lois fondamentales régissant les changes en Tunisia sont :
+
+- La Loi du 2001-83 sur la Promuluration des Placements Collectives.
+- Le Code de Changes et du Commerce Extérieur.
+- Le Loi n°45-098 sur les Conventions ISDA.
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:43:12] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:49:22] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:50:06] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:54:02] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:54:13] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:57:33] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: c'est quoi le loi du blanchement?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:58:00] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:59:25] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: bonjour
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 13:59:41] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:03:15] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: c'est quoi le loi du blanchement?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:03:35] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:04:01] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: c'est quoi le loi du blanchement?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:04:05] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:04:13] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: c'est quoi le loi du blanchement?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:04:18] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:05:11] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:05:54] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:06:05] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:09:02] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:09:14] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:11:38] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:11:45] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:12:14] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:12:28] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:12:56] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:13:04] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:16:12] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:16:24] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:19:41] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:19:58] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:22:53] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:23:08] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:26:32] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:26:50] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:28:26] "GET / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:28:46] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:28:58] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:32:12] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:32:25] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:33:18] "GET / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:33:57] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:34:08] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: vous etes qui?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:36:07] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:36:53] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:39:59] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:40:30] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:41:08] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:44:16] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:44:25] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:46:05] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:46:19] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:51:08] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:51:15] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:54:11] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:54:24] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:57:23] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:57:36] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: hello
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 14:58:32] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:00:45] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:01:10] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:04:04] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:04:13] "POST /ask HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:09:42] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:09:57] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:10:43] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les lois fondamentales regissant les changes en Tunisie ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:12:18] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:14:53] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelle est la réglementation en vigueur concernant l'activité de change manuel exercée par les banques intermédiaires agréées à travers des bureaux de change spécialisés ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:15:03] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Lorsqu’un «compte bureau de change» enregistre un solde créditeur, c'est quoi le solde necessaire
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:19:57] "POST /ask HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les obligations des bureaux de change en matière d'affichage des taux de change pour les opérations de vente et d'achat de devises étrangères ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:22:11] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\huggingface_hub\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\huggingface_hub\\repocard_data.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\huggingface_hub\\utils\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\huggingface_hub\\utils\\logging.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_array_like.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_utils\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_nbit.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_dtype_like.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_shape.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_typing\\_scalars.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\langdetect\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\langdetect\\detector_factory.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 413-810-847
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:25:37] "GET / HTTP/1.1" 200 -
+INFO:root:Query received: Quelles sont les obligations des bureaux de change en matière d'affichage des taux de change pour les opérations de vente et d'achat de devises étrangères ?
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2025 15:25:53] "POST /ask HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+2025-03-08 15:29:42,921 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 15:29:42,954 - INFO - Use pytorch device_name: cuda
+2025-03-08 15:29:42,954 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 15:29:46,039 - INFO - Loading pre-built indexes...
+2025-03-08 15:29:46,096 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 15:29:46,096 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 15:30:46,240 - INFO - 127.0.0.1 - - [08/Mar/2025 15:30:46] "GET / HTTP/1.1" 200 -
+2025-03-08 15:30:48,906 - INFO - Query received: Quelles sont les obligations des bureaux de change en matière d'affichage des taux de change pour les opérations de vente et d'achat de devises étrangères ?
+2025-03-08 15:32:18,731 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 15:32:18,738 - INFO - 127.0.0.1 - - [08/Mar/2025 15:32:18] "POST /ask HTTP/1.1" 200 -
+2025-03-08 15:35:08,252 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 15:37:48,183 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 15:37:48,185 - INFO - 127.0.0.1 - - [08/Mar/2025 15:37:48] "POST /ask HTTP/1.1" 200 -
+2025-03-08 15:45:47,655 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 15:45:47,699 - INFO - Use pytorch device_name: cuda
+2025-03-08 15:45:47,699 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 15:45:51,658 - INFO - Loading pre-built indexes...
+2025-03-08 15:45:51,742 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 15:45:51,742 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 15:46:07,531 - INFO - 127.0.0.1 - - [08/Mar/2025 15:46:07] "GET / HTTP/1.1" 200 -
+2025-03-08 15:46:10,296 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 15:49:07,811 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 15:49:07,833 - INFO - 127.0.0.1 - - [08/Mar/2025 15:49:07] "POST /ask HTTP/1.1" 200 -
+2025-03-08 15:50:45,409 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 15:50:45,442 - INFO - Use pytorch device_name: cuda
+2025-03-08 15:50:45,442 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 15:50:48,966 - INFO - Loading pre-built indexes...
+2025-03-08 15:50:49,035 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 15:50:49,035 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 15:51:08,915 - INFO - 127.0.0.1 - - [08/Mar/2025 15:51:08] "GET / HTTP/1.1" 200 -
+2025-03-08 15:51:14,575 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 15:53:24,648 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 15:53:24,652 - INFO - 127.0.0.1 - - [08/Mar/2025 15:53:24] "POST /ask HTTP/1.1" 200 -
+2025-03-08 15:56:55,828 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 15:56:55,879 - INFO - Use pytorch device_name: cuda
+2025-03-08 15:56:55,879 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 15:57:00,460 - INFO - Loading pre-built indexes...
+2025-03-08 15:57:00,575 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 15:57:00,576 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 15:57:01,361 - INFO - 127.0.0.1 - - [08/Mar/2025 15:57:01] "GET / HTTP/1.1" 200 -
+2025-03-08 15:57:10,966 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 15:59:18,336 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 15:59:18,340 - INFO - 127.0.0.1 - - [08/Mar/2025 15:59:18] "POST /ask HTTP/1.1" 200 -
+2025-03-08 16:00:14,175 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 16:00:14,205 - INFO - Use pytorch device_name: cuda
+2025-03-08 16:00:14,206 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 16:00:17,293 - INFO - Loading pre-built indexes...
+2025-03-08 16:00:17,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 16:00:17,353 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 16:00:52,961 - INFO - 127.0.0.1 - - [08/Mar/2025 16:00:52] "GET / HTTP/1.1" 200 -
+2025-03-08 16:00:56,016 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 16:03:38,120 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 16:03:38,124 - INFO - 127.0.0.1 - - [08/Mar/2025 16:03:38] "POST /ask HTTP/1.1" 200 -
+2025-03-08 16:04:09,574 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-08 16:04:09,608 - INFO - Use pytorch device_name: cuda
+2025-03-08 16:04:09,608 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-08 16:04:12,845 - INFO - Loading pre-built indexes...
+2025-03-08 16:04:12,900 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-08 16:04:12,900 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 16:04:29,703 - INFO - 127.0.0.1 - - [08/Mar/2025 16:04:29] "GET / HTTP/1.1" 200 -
+2025-03-08 16:04:36,885 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
+2025-03-08 16:05:51,904 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-08 16:05:51,907 - INFO - 127.0.0.1 - - [08/Mar/2025 16:05:51] "POST /ask HTTP/1.1" 200 -
