@@ -1560,3 +1560,485 @@ INFO:werkzeug: * Restarting with watchdog (windowsapi)
 2025-03-08 16:04:36,885 - INFO - Query received: Quelles sont les conditions et les restrictions liées à l’autorisation d’exportation de devises sous forme de billets de banque étrangers ou de chèques ?
 2025-03-08 16:05:51,904 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2025-03-08 16:05:51,907 - INFO - 127.0.0.1 - - [08/Mar/2025 16:05:51] "POST /ask HTTP/1.1" 200 -
+2025-03-11 08:44:32,696 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:44:33,625 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:44:33,625 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:44:33,827 - WARNING - No sentence-transformers model found with name sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2. Creating a new one with mean pooling.
+2025-03-11 08:46:17,876 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:46:18,901 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:46:18,901 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:46:28,424 - INFO - Loading pre-built indexes...
+2025-03-11 08:46:28,780 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 08:46:28,780 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 08:48:36,905 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:48:37,973 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:48:37,973 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:48:46,838 - INFO - Loading pre-built indexes...
+2025-03-11 08:48:47,078 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 08:48:47,078 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 08:48:47,121 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 08:49:36,715 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:49:37,727 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:49:37,727 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:49:45,618 - INFO - Loading pre-built indexes...
+2025-03-11 08:49:45,838 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 08:49:45,838 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 08:49:45,868 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 08:50:07,940 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:50:08,776 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:50:08,776 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:50:18,337 - INFO - Loading pre-built indexes...
+2025-03-11 08:50:18,584 - WARNING -  * Debugger is active!
+2025-03-11 08:50:18,601 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 08:50:18,871 - INFO - 127.0.0.1 - - [11/Mar/2025 08:50:18] "GET / HTTP/1.1" 200 -
+2025-03-11 08:50:41,265 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 08:50:42,655 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_dynamo\\config.py', reloading
+2025-03-11 08:50:42,706 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_functorch\\config.py', reloading
+2025-03-11 08:50:42,827 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_inductor\\test_operators.py', reloading
+2025-03-11 08:50:44,762 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 08:51:04,040 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:51:04,119 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:51:04,119 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:51:28,702 - INFO - Loading pre-built indexes...
+2025-03-11 08:51:28,891 - WARNING -  * Debugger is active!
+2025-03-11 08:51:28,908 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 08:51:29,000 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 08:51:29,874 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\distributed\\_functional_collectives.py', reloading
+2025-03-11 08:51:29,916 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\distributed\\tensor\\_collective_utils.py', reloading
+2025-03-11 08:51:31,770 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 08:51:53,696 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 08:51:54,498 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:51:54,498 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 08:52:08,800 - INFO - Loading pre-built indexes...
+2025-03-11 08:52:09,022 - WARNING -  * Debugger is active!
+2025-03-11 08:52:09,030 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 08:56:40,573 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 08:56:40,579 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 08:56:40,579 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 08:57:13,387 - WARNING - Created default config file: config.yaml
+2025-03-11 08:57:13,403 - INFO - Loading embedding model from local path...
+2025-03-11 08:57:14,440 - INFO - Use pytorch device_name: cuda
+2025-03-11 08:57:14,440 - INFO - Load pretrained SentenceTransformer: path/to/local/model
+2025-03-11 08:57:14,441 - ERROR - Failed to initialize data: Path path/to/local/model not found
+2025-03-11 08:57:14,441 - ERROR - Startup failed: Path path/to/local/model not found
+2025-03-11 09:05:14,048 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:05:14,048 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:05:21,895 - INFO - Loading pre-built indexes...
+2025-03-11 09:05:22,130 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 09:05:22,130 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:05:22,168 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:05:45,242 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:05:45,250 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:05:53,552 - INFO - Loading pre-built indexes...
+2025-03-11 09:05:53,792 - WARNING -  * Debugger is active!
+2025-03-11 09:05:53,800 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 09:05:53,892 - INFO - 127.0.0.1 - - [11/Mar/2025 09:05:53] "GET / HTTP/1.1" 200 -
+2025-03-11 09:05:59,271 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:06:02,742 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\distributed\\_composable\\fsdp\\_fsdp_param.py', reloading
+2025-03-11 09:06:02,796 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\distributed\\_composable\\fsdp\\_fsdp_collectives.py', reloading
+2025-03-11 09:06:04,876 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:06:25,322 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:06:25,322 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:06:32,881 - INFO - Loading pre-built indexes...
+2025-03-11 09:06:33,088 - WARNING -  * Debugger is active!
+2025-03-11 09:06:33,103 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 09:06:33,197 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:06:41,485 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 09:06:41,486 - ERROR - Error generating answer: model requires more system memory (3.6 GiB) than is available (2.6 GiB)
+2025-03-11 09:06:41,490 - INFO - 127.0.0.1 - - [11/Mar/2025 09:06:41] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:08:46,705 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 09:08:46,705 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 09:09:14,358 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:09:15,386 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:09:15,386 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:09:26,956 - INFO - Loading pre-built indexes...
+2025-03-11 09:09:27,166 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 09:09:27,168 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:09:27,201 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:09:46,049 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:09:46,844 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:09:46,844 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:09:53,567 - INFO - Loading pre-built indexes...
+2025-03-11 09:09:53,758 - WARNING -  * Debugger is active!
+2025-03-11 09:09:53,768 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 09:10:56,902 - INFO - 127.0.0.1 - - [11/Mar/2025 09:10:56] "GET / HTTP/1.1" 200 -
+2025-03-11 09:11:01,650 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:11:06,759 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 09:11:06,760 - ERROR - Error generating answer: model requires more system memory (3.6 GiB) than is available (2.8 GiB)
+Traceback (most recent call last):
+  File "C:\Users\chedl\OneDrive - ESPRIT\Desktop\Jo\app.py", line 251, in generate_answer
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 332, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 177, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 122, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (3.6 GiB) than is available (2.8 GiB)
+2025-03-11 09:11:06,767 - INFO - 127.0.0.1 - - [11/Mar/2025 09:11:06] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:12:39,368 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 09:12:39,368 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 09:12:39,376 - INFO -  * Detected change in 'C:\\Users\\chedl\\OneDrive - ESPRIT\\Desktop\\Jo\\app.py', reloading
+2025-03-11 09:12:43,185 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:13:06,851 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:13:07,878 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:13:07,878 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:13:16,126 - INFO - Loading pre-built indexes...
+2025-03-11 09:13:16,357 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 09:13:16,357 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:13:16,395 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:13:35,126 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:13:35,930 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:13:35,930 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:13:43,031 - INFO - Loading pre-built indexes...
+2025-03-11 09:13:43,251 - WARNING -  * Debugger is active!
+2025-03-11 09:13:43,271 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 09:13:49,230 - INFO - 127.0.0.1 - - [11/Mar/2025 09:13:49] "GET / HTTP/1.1" 200 -
+2025-03-11 09:13:51,956 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:13:56,878 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 09:13:56,878 - ERROR - Error generating answer: model requires more system memory (3.6 GiB) than is available (2.4 GiB)
+Traceback (most recent call last):
+  File "C:\Users\chedl\OneDrive - ESPRIT\Desktop\Jo\app.py", line 253, in generate_answer
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 332, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 177, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 122, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (3.6 GiB) than is available (2.4 GiB)
+2025-03-11 09:13:56,884 - INFO - 127.0.0.1 - - [11/Mar/2025 09:13:56] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:15:06,726 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:15:06,761 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:15:06,762 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:15:13,316 - INFO - Loading pre-built indexes...
+2025-03-11 09:15:13,379 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 09:15:13,379 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:15:13,388 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:15:19,248 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:15:19,275 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:15:19,275 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:15:23,780 - INFO - Loading pre-built indexes...
+2025-03-11 09:15:23,835 - WARNING -  * Debugger is active!
+2025-03-11 09:15:23,839 - INFO -  * Debugger PIN: 413-810-847
+2025-03-11 09:15:23,864 - INFO - 127.0.0.1 - - [11/Mar/2025 09:15:23] "GET / HTTP/1.1" 200 -
+2025-03-11 09:15:23,867 - INFO - 127.0.0.1 - - [11/Mar/2025 09:15:23] "GET / HTTP/1.1" 200 -
+2025-03-11 09:15:36,385 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:15:37,761 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 09:15:37,761 - ERROR - Error generating answer: model requires more system memory (3.6 GiB) than is available (2.2 GiB)
+Traceback (most recent call last):
+  File "C:\Users\chedl\OneDrive - ESPRIT\Desktop\Jo\app.py", line 253, in generate_answer
+    response = ollama.chat(
+               ^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 332, in chat
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 177, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chedl\AppData\Local\Programs\Python\Python312\Lib\site-packages\ollama\_client.py", line 122, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (3.6 GiB) than is available (2.2 GiB)
+2025-03-11 09:15:37,763 - INFO - 127.0.0.1 - - [11/Mar/2025 09:15:37] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:15:44,399 - INFO -  * Detected change in 'C:\\Users\\chedl\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py', reloading
+2025-03-11 09:15:45,971 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-11 09:15:51,067 - INFO - Loaded config: {'json_file': 'legal_data.json', 'index_file': 'faiss_index', 'embeddings_file': 'embeddings.npy', 'mappings_file': 'doc_mappings.json', 'bm25_corpus_file': 'bm25_corpus.json', 'embedding_model': 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'vector_dim': 384, 'ollama_model': 'deepseek-r1:7b', 'embedding_model_path': 'path/to/local/model'}
+2025-03-11 09:15:51,101 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:15:51,101 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:18:35,162 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 09:18:35,193 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:18:35,193 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:18:41,004 - INFO - Loading pre-built indexes...
+2025-03-11 09:18:41,063 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 09:18:41,063 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:18:53,002 - INFO - 127.0.0.1 - - [11/Mar/2025 09:18:53] "GET / HTTP/1.1" 200 -
+2025-03-11 09:18:55,847 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:21:10,689 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 09:21:10,715 - INFO - 127.0.0.1 - - [11/Mar/2025 09:21:10] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:21:41,539 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 09:21:41,571 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:21:41,571 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:21:45,933 - INFO - Loading pre-built indexes...
+2025-03-11 09:21:46,005 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 09:21:46,005 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:21:48,832 - INFO - 127.0.0.1 - - [11/Mar/2025 09:21:48] "GET / HTTP/1.1" 200 -
+2025-03-11 09:21:51,736 - INFO - Query received: whats the regulation laws on a foreign entity?
+2025-03-11 09:24:21,183 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 09:24:21,188 - INFO - 127.0.0.1 - - [11/Mar/2025 09:24:21] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:26:04,304 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 09:28:16,018 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 09:28:16,019 - INFO - 127.0.0.1 - - [11/Mar/2025 09:28:16] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:36:17,279 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 09:36:17,319 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:36:17,319 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:36:21,652 - INFO - Loading pre-built indexes...
+2025-03-11 09:36:21,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 09:36:21,721 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:37:16,358 - INFO - 127.0.0.1 - - [11/Mar/2025 09:37:16] "GET / HTTP/1.1" 200 -
+2025-03-11 09:37:19,096 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 09:40:15,677 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 09:40:15,681 - INFO - 127.0.0.1 - - [11/Mar/2025 09:40:15] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:51:05,930 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 09:51:05,956 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:51:05,956 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 09:51:11,290 - INFO - Loading pre-built indexes...
+2025-03-11 09:51:11,377 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 09:51:11,377 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 09:51:11,681 - INFO - 127.0.0.1 - - [11/Mar/2025 09:51:11] "GET / HTTP/1.1" 200 -
+2025-03-11 09:51:19,653 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 09:52:50,929 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 09:52:50,930 - INFO - 127.0.0.1 - - [11/Mar/2025 09:52:50] "POST /ask HTTP/1.1" 200 -
+2025-03-11 09:52:58,034 - INFO - 127.0.0.1 - - [11/Mar/2025 09:52:58] "GET /static/legal_data.pdf HTTP/1.1" 200 -
+2025-03-11 09:53:15,408 - INFO - 127.0.0.1 - - [11/Mar/2025 09:53:15] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 09:53:24,599 - INFO - 127.0.0.1 - - [11/Mar/2025 09:53:24] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 09:59:59,901 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 09:59:59,932 - INFO - Use pytorch device_name: cuda
+2025-03-11 09:59:59,932 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 10:00:04,585 - INFO - Loading pre-built indexes...
+2025-03-11 10:00:04,649 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 10:00:04,649 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 10:00:04,765 - INFO - 127.0.0.1 - - [11/Mar/2025 10:00:04] "GET / HTTP/1.1" 200 -
+2025-03-11 10:00:13,300 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 10:03:41,306 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 10:03:41,308 - INFO - 127.0.0.1 - - [11/Mar/2025 10:03:41] "POST /ask HTTP/1.1" 200 -
+2025-03-11 10:11:37,427 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 10:11:37,464 - INFO - Use pytorch device_name: cuda
+2025-03-11 10:11:37,464 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 10:11:42,926 - INFO - Loading pre-built indexes...
+2025-03-11 10:11:43,011 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 10:11:43,011 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 10:11:49,089 - INFO - 127.0.0.1 - - [11/Mar/2025 10:11:49] "GET / HTTP/1.1" 200 -
+2025-03-11 10:11:49,694 - INFO - 127.0.0.1 - - [11/Mar/2025 10:11:49] "GET / HTTP/1.1" 200 -
+2025-03-11 10:11:55,316 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 10:15:42,026 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 10:15:42,031 - INFO - 127.0.0.1 - - [11/Mar/2025 10:15:42] "POST /ask HTTP/1.1" 200 -
+2025-03-11 10:24:00,044 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 10:24:00,123 - INFO - Use pytorch device_name: cuda
+2025-03-11 10:24:00,123 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 10:24:04,186 - INFO - Loading pre-built indexes...
+2025-03-11 10:24:04,247 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.177:5000
+2025-03-11 10:24:04,247 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 10:24:19,326 - INFO - 127.0.0.1 - - [11/Mar/2025 10:24:19] "GET / HTTP/1.1" 200 -
+2025-03-11 10:24:23,126 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 10:27:21,209 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 10:27:21,214 - ERROR - Error in /ask endpoint: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO conversation ("query", response_en, response_fr, timestamp) VALUES (?, ?, ?, ?)]
+[parameters: [{'query': 'Quelle est la réglementation pour les investissements étrangers ?', 'response_en': '', 'response_fr': '<think>\nAlright, I need to answer t ... (3129 characters truncated) ... on, les investissements étrangers dans Tunisie nécessitent une approche rigoureuse et l\'adherence aux normes légales et réglementaires spécifiques.'}]]
+2025-03-11 10:27:21,215 - INFO - 127.0.0.1 - - [11/Mar/2025 10:27:21] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-03-11 17:02:14,481 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 17:02:14,606 - INFO - Use pytorch device_name: cuda
+2025-03-11 17:02:14,607 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 17:02:19,905 - INFO - Loading pre-built indexes...
+2025-03-11 17:02:20,034 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 17:02:20,034 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 17:02:26,943 - INFO - 127.0.0.1 - - [11/Mar/2025 17:02:26] "GET / HTTP/1.1" 200 -
+2025-03-11 17:02:30,616 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 17:02:33,498 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 17:02:33,499 - ERROR - Error generating answer: model requires more system memory (3.0 GiB) than is available (2.6 GiB)
+2025-03-11 17:02:33,502 - ERROR - Error in /ask endpoint: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO conversation ("query", response_en, response_fr, timestamp) VALUES (?, ?, ?, ?)]
+[parameters: [{'response_fr': "Une erreur s'est produite lors du traitement de votre demande.", 'response_en': 'An error occurred while processing your request.', 'query': 'Quelle est la réglementation pour les investissements étrangers ?'}]]
+2025-03-11 17:02:33,503 - INFO - 127.0.0.1 - - [11/Mar/2025 17:02:33] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2025-03-11 17:03:09,931 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 17:03:09,969 - INFO - Use pytorch device_name: cuda
+2025-03-11 17:03:09,969 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 17:03:13,906 - INFO - Loading pre-built indexes...
+2025-03-11 17:03:13,958 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 17:03:13,958 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 17:03:34,752 - INFO - 127.0.0.1 - - [11/Mar/2025 17:03:34] "GET / HTTP/1.1" 200 -
+2025-03-11 17:03:37,336 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 17:03:38,739 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 17:03:38,740 - ERROR - Error generating answer: model requires more system memory (3.0 GiB) than is available (2.6 GiB)
+2025-03-11 17:03:38,740 - INFO - 127.0.0.1 - - [11/Mar/2025 17:03:38] "POST /ask HTTP/1.1" 200 -
+2025-03-11 17:04:12,929 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 17:04:12,965 - INFO - Use pytorch device_name: cuda
+2025-03-11 17:04:12,965 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 17:04:16,162 - INFO - Loading pre-built indexes...
+2025-03-11 17:04:16,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 17:04:16,218 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 17:04:18,250 - INFO - 127.0.0.1 - - [11/Mar/2025 17:04:18] "GET / HTTP/1.1" 200 -
+2025-03-11 17:04:23,450 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 17:04:24,843 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 17:04:24,844 - ERROR - Error generating answer: model requires more system memory (3.0 GiB) than is available (2.8 GiB)
+2025-03-11 17:04:24,844 - INFO - 127.0.0.1 - - [11/Mar/2025 17:04:24] "POST /ask HTTP/1.1" 200 -
+2025-03-11 17:05:32,388 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 17:05:32,429 - INFO - Use pytorch device_name: cuda
+2025-03-11 17:05:32,429 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 17:05:35,483 - INFO - Loading pre-built indexes...
+2025-03-11 17:05:35,541 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 17:05:35,541 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 17:05:36,828 - INFO - 127.0.0.1 - - [11/Mar/2025 17:05:36] "GET / HTTP/1.1" 200 -
+2025-03-11 17:05:40,633 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 17:05:42,038 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2025-03-11 17:05:42,038 - ERROR - Error generating answer: model requires more system memory (3.0 GiB) than is available (2.7 GiB)
+2025-03-11 17:05:42,039 - INFO - 127.0.0.1 - - [11/Mar/2025 17:05:42] "POST /ask HTTP/1.1" 200 -
+2025-03-11 17:07:00,782 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 17:07:00,820 - INFO - Use pytorch device_name: cuda
+2025-03-11 17:07:00,820 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 17:07:04,765 - INFO - Loading pre-built indexes...
+2025-03-11 17:07:04,820 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 17:07:04,821 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 17:08:30,827 - INFO - 127.0.0.1 - - [11/Mar/2025 17:08:30] "GET / HTTP/1.1" 200 -
+2025-03-11 17:08:33,245 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 17:12:49,290 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 17:12:49,417 - INFO - 127.0.0.1 - - [11/Mar/2025 17:12:49] "POST /ask HTTP/1.1" 200 -
+2025-03-11 19:03:53,091 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:03:53,168 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:03:53,169 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:04:00,990 - INFO - Loading pre-built indexes...
+2025-03-11 19:04:01,118 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:04:01,118 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:04:09,564 - INFO - 127.0.0.1 - - [11/Mar/2025 19:04:09] "GET / HTTP/1.1" 200 -
+2025-03-11 19:04:37,727 - INFO - 127.0.0.1 - - [11/Mar/2025 19:04:37] "[33mGET /path-to-pdf.pdf HTTP/1.1[0m" 404 -
+2025-03-11 19:06:39,414 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:06:39,448 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:06:39,448 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:06:43,000 - INFO - Loading pre-built indexes...
+2025-03-11 19:06:43,060 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:06:43,060 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:06:50,583 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:50] "GET / HTTP/1.1" 200 -
+2025-03-11 19:06:54,276 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 19:10:07,284 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 19:10:07,314 - INFO - 127.0.0.1 - - [11/Mar/2025 19:10:07] "POST /ask HTTP/1.1" 200 -
+2025-03-11 19:18:19,109 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:18:19,157 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:18:19,158 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:18:23,134 - INFO - Loading pre-built indexes...
+2025-03-11 19:18:23,210 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:18:23,210 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:18:32,464 - INFO - 127.0.0.1 - - [11/Mar/2025 19:18:32] "GET / HTTP/1.1" 200 -
+2025-03-11 19:18:36,630 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 19:20:31,512 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 19:20:31,516 - INFO - 127.0.0.1 - - [11/Mar/2025 19:20:31] "POST /ask HTTP/1.1" 200 -
+2025-03-11 19:24:47,364 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:24:47,416 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:24:47,417 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:24:51,457 - INFO - Loading pre-built indexes...
+2025-03-11 19:24:51,572 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:24:51,572 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:24:51,804 - INFO - 127.0.0.1 - - [11/Mar/2025 19:24:51] "GET / HTTP/1.1" 200 -
+2025-03-11 19:25:08,900 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 19:28:21,709 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 19:28:21,716 - INFO - 127.0.0.1 - - [11/Mar/2025 19:28:21] "POST /ask HTTP/1.1" 200 -
+2025-03-11 19:33:08,136 - INFO - 127.0.0.1 - - [11/Mar/2025 19:33:08] "GET /static/legal_data.pdf HTTP/1.1" 200 -
+2025-03-11 19:33:12,991 - INFO - 127.0.0.1 - - [11/Mar/2025 19:33:12] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 19:40:06,504 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:40:06,547 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:40:06,547 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:40:10,889 - INFO - Loading pre-built indexes...
+2025-03-11 19:40:10,990 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:40:10,990 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:40:18,790 - INFO - 127.0.0.1 - - [11/Mar/2025 19:40:18] "GET / HTTP/1.1" 200 -
+2025-03-11 19:40:25,447 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 19:43:19,692 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 19:43:19,697 - INFO - 127.0.0.1 - - [11/Mar/2025 19:43:19] "POST /ask HTTP/1.1" 200 -
+2025-03-11 19:43:26,863 - INFO - 127.0.0.1 - - [11/Mar/2025 19:43:26] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 19:43:45,532 - INFO - 127.0.0.1 - - [11/Mar/2025 19:43:45] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 19:43:54,899 - INFO - 127.0.0.1 - - [11/Mar/2025 19:43:54] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 19:48:20,834 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 19:48:20,876 - INFO - Use pytorch device_name: cuda
+2025-03-11 19:48:20,877 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 19:48:24,839 - INFO - Loading pre-built indexes...
+2025-03-11 19:48:24,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 19:48:24,926 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:48:31,391 - INFO - 127.0.0.1 - - [11/Mar/2025 19:48:31] "GET / HTTP/1.1" 200 -
+2025-03-11 19:48:43,263 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 20:03:28,327 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 20:03:28,372 - INFO - Use pytorch device_name: cuda
+2025-03-11 20:03:28,372 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 20:03:33,016 - INFO - Loading pre-built indexes...
+2025-03-11 20:03:33,090 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 20:03:33,090 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 20:03:35,269 - INFO - 127.0.0.1 - - [11/Mar/2025 20:03:35] "GET / HTTP/1.1" 200 -
+2025-03-11 20:03:39,819 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 20:07:53,054 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 20:07:53,059 - INFO - 127.0.0.1 - - [11/Mar/2025 20:07:53] "POST /ask HTTP/1.1" 200 -
+2025-03-11 20:08:37,672 - INFO - 127.0.0.1 - - [11/Mar/2025 20:08:37] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 20:16:20,180 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 20:16:20,219 - INFO - Use pytorch device_name: cuda
+2025-03-11 20:16:20,219 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 20:16:23,403 - INFO - Loading pre-built indexes...
+2025-03-11 20:16:23,471 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 20:16:23,471 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 20:16:27,493 - INFO - 127.0.0.1 - - [11/Mar/2025 20:16:27] "GET / HTTP/1.1" 200 -
+2025-03-11 20:16:37,777 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 20:19:27,461 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 20:19:27,464 - INFO - 127.0.0.1 - - [11/Mar/2025 20:19:27] "POST /ask HTTP/1.1" 200 -
+2025-03-11 20:19:45,401 - INFO - 127.0.0.1 - - [11/Mar/2025 20:19:45] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -

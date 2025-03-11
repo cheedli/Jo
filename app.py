@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 import faiss
 import numpy as np
@@ -22,7 +22,9 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# ------------------------------------------------------------------------------
 # Load configuration from a YAML file or environment variables
+# ------------------------------------------------------------------------------
 CONFIG_FILE = "config.yaml"
 DEFAULT_CONFIG = {
     "json_file": "legal_data.json",
@@ -37,48 +39,68 @@ DEFAULT_CONFIG = {
 
 if os.path.exists(CONFIG_FILE):
     with open(CONFIG_FILE, "r") as f:
-        config = yaml.safe_load(f) or DEFAULT_CONFIG
+        loaded_config = yaml.safe_load(f) or {}
+    config = DEFAULT_CONFIG.copy()
+    config.update(loaded_config)
 else:
     config = DEFAULT_CONFIG
     logging.warning(f"Config file {CONFIG_FILE} not found, using defaults.")
 
+# ------------------------------------------------------------------------------
 # Flask app setup
-app = Flask(__name__, template_folder="templates")
+# ------------------------------------------------------------------------------
+app = Flask(__name__, template_folder="templates", static_folder="static")
 CORS(app)
 
+# ------------------------------------------------------------------------------
 # Global variables (loaded once)
+# ------------------------------------------------------------------------------
 embedding_model = SentenceTransformer(config["embedding_model"])
 index, embeddings, doc_mappings, bm25, legal_data = None, None, None, None, None
 
-# Tokenization for BM25
+# ------------------------------------------------------------------------------
+# Helper Functions
+# ------------------------------------------------------------------------------
 def tokenize_text(text: str, lang: str = "fr") -> List[str]:
     """Tokenize text for BM25 scoring."""
     return re.findall(r'\w+', text.lower())
 
-# Check if indexes need rebuilding
 def needs_rebuild(json_file: str, *dependent_files: str) -> bool:
-    """Check if dependent files are outdated compared to the JSON file."""
+    """
+    Check if dependent files are outdated compared to the JSON file
+    or missing entirely.
+    """
     if not os.path.exists(json_file):
         raise FileNotFoundError(f"{json_file} not found.")
     json_mtime = os.path.getmtime(json_file)
-    return any(not os.path.exists(dep_file) or os.path.getmtime(dep_file) < json_mtime 
-               for dep_file in dependent_files)
+    return any(
+        (not os.path.exists(dep_file)) or (os.path.getmtime(dep_file) < json_mtime)
+        for dep_file in dependent_files
+    )
 
-# Load or build indexes
 def initialize_data():
-    """Initialize FAISS index, embeddings, and BM25 corpus."""
+    """
+    Initialize FAISS index, embeddings, and BM25 corpus.
+    Builds or loads from disk depending on timestamps.
+    """
     global index, embeddings, doc_mappings, bm25, legal_data
     
     try:
         legal_data = json.load(open(config["json_file"], "r", encoding="utf-8"))
-        if not needs_rebuild(config["json_file"], config["index_file"], config["embeddings_file"], 
-                            config["mappings_file"], config["bm25_corpus_file"]):
+        
+        if not needs_rebuild(
+            config["json_file"],
+            config["index_file"],
+            config["embeddings_file"],
+            config["mappings_file"],
+            config["bm25_corpus_file"]
+        ):
             logging.info("Loading pre-built indexes...")
             index = faiss.read_index(config["index_file"])
             embeddings = np.load(config["embeddings_file"]).tolist()
-            with open(config["mappings_file"], "r") as f:
+            with open(config["mappings_file"], "r", encoding="utf-8") as f:
                 doc_mappings = json.load(f)
-            with open(config["bm25_corpus_file"], "r") as f:
+            with open(config["bm25_corpus_file"], "r", encoding="utf-8") as f:
                 bm25_corpus = json.load(f)
             bm25 = BM25Okapi(bm25_corpus)
         else:
@@ -112,16 +134,28 @@ def initialize_data():
             index.add(np.array(embeddings))
             faiss.write_index(index, config["index_file"])
             np.save(config["embeddings_file"], np.array(embeddings))
-            with open(config["mappings_file"], "w") as f:
-                json.dump(doc_mappings, f)
-            with open(config["bm25_corpus_file"], "w") as f:
-                json.dump(bm25_corpus, f)
+            with open(config["mappings_file"], "w", encoding="utf-8") as f:
+                json.dump(doc_mappings, f, ensure_ascii=False)
+            with open(config["bm25_corpus_file"], "w", encoding="utf-8") as f:
+                json.dump(bm25_corpus, f, ensure_ascii=False)
             bm25 = BM25Okapi(bm25_corpus)
+
     except Exception as e:
         logging.error(f"Failed to initialize data: {e}")
         raise
 
+def detect_language(query: str) -> str:
+    """Detect query language using langdetect with a safe fallback."""
+    try:
+        lang = detect(query)
+        return "fr" if lang.startswith("fr") else "en"
+    except Exception as e:
+        logging.error(f"Language detection failed: {e}")
+        return "en"
+
+# ------------------------------------------------------------------------------
 # Chatbot State Definition
+# ------------------------------------------------------------------------------
 class ChatbotState(TypedDict):
     query: str
     reasoning_steps: List[Dict[str, str]]
@@ -131,16 +165,45 @@ class ChatbotState(TypedDict):
     sources: List[Dict]
     thinking_time: float
 
+# ------------------------------------------------------------------------------
+# Prompt Templates
+# ------------------------------------------------------------------------------
+SYSTEM_PROMPT_EN = """
+You are a legal assistant specializing in Tunisian foreign exchange laws. Answer the user's query in a clear, conversational tone based solely on the provided legal texts. Do not invent information or speculate beyond the context given. Structure your response as follows:
+1. Briefly restate the query for clarity.
+2. Provide a concise answer based on the legal texts.
+3. End with "Final Answer (English):" followed by a standalone summary sentence.
+
+Legal Texts:
+{context}
+
+If no relevant information is found, say: "No specific regulation found in the provided data."
+"""
+
+SYSTEM_PROMPT_FR = """
+Vous êtes un assistant juridique spécialisé dans les lois tunisiennes sur les changes. Répondez à la question de l'utilisateur de manière claire et conversationnelle, en vous basant uniquement sur les textes juridiques fournis. Ne fabriquez pas d'informations ni ne spéculez au-delà du contexte donné. Structurez votre réponse comme suit :
+1. Reformulez brièvement la question pour plus de clarté.
+2. Fournissez une réponse concise basée sur les textes juridiques.
+3. Terminez par "Réponse finale (Français) :" suivi d'une phrase récapitulative autonome.
+
+Textes juridiques :
+{context}
+
+Si aucune information pertinente n’est trouvée, dites : "Aucune réglementation spécifique trouvée dans les données fournies."
+"""
+
+# ------------------------------------------------------------------------------
 # Workflow Nodes
+# ------------------------------------------------------------------------------
 def understand_query(state: ChatbotState) -> ChatbotState:
-    """Parse and log the incoming query."""
+    """Log the incoming query and store it."""
     query = state["query"]
     logging.info(f"Query received: {query}")
     state["reasoning_steps"] = [{"step": "query", "text": query}]
     return state
 
 def perform_search(state: ChatbotState) -> ChatbotState:
-    """Search legal data using FAISS and BM25."""
+    """Search legal data using FAISS (semantic) and BM25 (keyword)."""
     query = state["query"]
     try:
         query_vector = embedding_model.encode(query, convert_to_numpy=True)
@@ -178,7 +241,9 @@ def perform_search(state: ChatbotState) -> ChatbotState:
                     "chunk_id": res["chunk_id"],
                     "page": res["page"],
                     "text": res["text"],
-                    "update_date": res["update_date"]
+                    "update_date": res["update_date"],
+                    "pdf_url": f"/static/legal_data.pdf#page={res['page']}",
+                    "highlight": res["article"] != "N/A"
                 }
                 for res in search_results
             ]
@@ -188,40 +253,6 @@ def perform_search(state: ChatbotState) -> ChatbotState:
         state["sources"] = []
         state["reasoning_steps"].append({"step": "search", "text": "Search failed due to an error."})
     return state
-
-def detect_language(query: str) -> str:
-    """Detect query language using langdetect with fallback."""
-    try:
-        lang = detect(query)
-        return "fr" if lang.startswith("fr") else "en"
-    except Exception as e:
-        logging.error(f"Language detection failed: {e}")
-        return "en"  # Default to English
-
-# Prompt Templates
-SYSTEM_PROMPT_EN = """
-You are a legal assistant specializing in Tunisian foreign exchange laws. Answer the user's query in a clear, conversational tone based solely on the provided legal texts. Do not invent information or speculate beyond the context given. Structure your response as follows:
-1. Briefly restate the query for clarity.
-2. Provide a concise answer based on the legal texts.
-3. End with "Final Answer (English):" followed by a standalone summary sentence.
-
-Legal Texts:
-{context}
-
-If no relevant information is found, say: "No specific regulation found in the provided data."
-"""
-
-SYSTEM_PROMPT_FR = """
-Vous êtes un assistant juridique spécialisé dans les lois tunisiennes sur les changes. Répondez à la question de l'utilisateur de manière claire et conversationnelle, en vous basant uniquement sur les textes juridiques fournis. Ne fabriquez pas d'informations ni ne spéculez au-delà du contexte donné. Structurez votre réponse comme suit :
-1. Reformulez brièvement la question pour plus de clarté.
-2. Fournissez une réponse concise basée sur les textes juridiques.
-3. Terminez par "Réponse finale (Français) :" suivi d'une phrase récapitulative autonome.
-
-Textes juridiques :
-{context}
-
-Si aucune information pertinente n’est trouvée, dites : "Aucune réglementation spécifique trouvée dans les données fournies."
-"""
 
 def generate_answer(state: ChatbotState) -> ChatbotState:
     """Generate a response using the Ollama model."""
@@ -245,16 +276,17 @@ def generate_answer(state: ChatbotState) -> ChatbotState:
             ]
         )
         reasoning = response["message"]["content"]
-        final_answer_key = "" if lang == "fr" else ""
-        final_answer_match = re.search(rf'{final_answer_key}.*', reasoning)
-        answer = final_answer_match.group(0) if final_answer_match else reasoning
-        
+        final_answer_key = "Réponse finale (Français):" if lang == "fr" else "Final Answer (English):"
+        match = re.search(rf'{re.escape(final_answer_key)}(.*)', reasoning, re.IGNORECASE | re.DOTALL)
+        answer = match.group(1).strip() if match else reasoning.strip()
+
         if lang == "fr":
             state["final_answer_fr"] = answer
             state["reasoning_steps"].append({"step": "reasoning_fr", "text": reasoning})
         else:
             state["final_answer_en"] = answer
             state["reasoning_steps"].append({"step": "reasoning_en", "text": reasoning})
+
     except Exception as e:
         logging.error(f"Error generating answer: {e}")
         state["final_answer_en"] = "An error occurred while processing your request."
@@ -263,7 +295,9 @@ def generate_answer(state: ChatbotState) -> ChatbotState:
     state["thinking_time"] = time.time() - start_time
     return state
 
-# Workflow Setup
+# ------------------------------------------------------------------------------
+# StateGraph Setup
+# ------------------------------------------------------------------------------
 workflow = StateGraph(ChatbotState)
 workflow.add_node("understand_query", understand_query)
 workflow.add_node("perform_search", perform_search)
@@ -274,7 +308,9 @@ workflow.add_edge("perform_search", "generate_answer")
 workflow.add_edge("generate_answer", END)
 graph = workflow.compile()
 
-# Routes
+# ------------------------------------------------------------------------------
+# Flask Routes
+# ------------------------------------------------------------------------------
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -313,6 +349,14 @@ def ask():
         logging.error(f"Error in /ask endpoint: {e}")
         return jsonify({"error": "Internal server error"}), 500
 
+# Serve static files explicitly (optional, Flask does this by default)
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('static', filename)
+
+# ------------------------------------------------------------------------------
+# Main
+# ------------------------------------------------------------------------------
 if __name__ == "__main__":
     initialize_data()  # Load data at startup
     app.run(debug=False, host="0.0.0.0", port=5000)
