@@ -2042,3 +2042,17 @@ ollama._types.ResponseError: model requires more system memory (3.6 GiB) than is
 2025-03-11 20:19:27,461 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2025-03-11 20:19:27,464 - INFO - 127.0.0.1 - - [11/Mar/2025 20:19:27] "POST /ask HTTP/1.1" 200 -
 2025-03-11 20:19:45,401 - INFO - 127.0.0.1 - - [11/Mar/2025 20:19:45] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
+2025-03-11 20:30:20,660 - WARNING - Config file config.yaml not found, using defaults.
+2025-03-11 20:30:20,703 - INFO - Use pytorch device_name: cuda
+2025-03-11 20:30:20,703 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-03-11 20:30:24,429 - INFO - Loading pre-built indexes...
+2025-03-11 20:30:24,502 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.3:5000
+2025-03-11 20:30:24,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 20:30:32,515 - INFO - 127.0.0.1 - - [11/Mar/2025 20:30:32] "GET / HTTP/1.1" 200 -
+2025-03-11 20:30:35,848 - INFO - Query received: Quelle est la réglementation pour les investissements étrangers ?
+2025-03-11 20:33:38,028 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-11 20:33:38,032 - INFO - 127.0.0.1 - - [11/Mar/2025 20:33:38] "POST /ask HTTP/1.1" 200 -
+2025-03-11 20:34:32,759 - INFO - 127.0.0.1 - - [11/Mar/2025 20:34:32] "[36mGET /static/legal_data.pdf HTTP/1.1[0m" 304 -
