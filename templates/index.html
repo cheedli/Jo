@@ -26,32 +26,27 @@
     }
     html, body {
       height: 100%;
-      /* Let the browser handle scrolling. */
       background: linear-gradient(120deg, #f9f9fb 0%, #f3f7ff 100%);
       color: #333;
       overflow: auto;
     }
 
-    /* 
-      Overall container:
-      - Occupies the full viewport height 
-      - Positions sidebar absolutely
-    */
     .chat-layout {
       min-height: 100vh;
       display: flex;
-      flex-direction: column; /* header + main content */
+      flex-direction: column;
     }
 
-    /* Top header (pastel red accent) */
     .top-header {
-      background: #cc2c2c; /* A bit lighter than #D32F2F */
+      background: linear-gradient(90deg, #cc2c2c, #ad1f1f);
       color: #fff;
       padding: 0.75rem 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1000;
     }
     .header-left {
       display: flex;
@@ -59,49 +54,46 @@
       gap: 1rem;
     }
     .toggle-btn {
-      background: none;
+      background: transparent;
       border: 1px solid #fff;
       color: #fff;
       padding: 0.5rem 0.75rem;
-      border-radius: 4px;
+      border-radius: 50%;
       cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.2s;
+      font-size: 1.2rem;
+      transition: transform 0.2s, background 0.2s;
     }
     .toggle-btn:hover {
-      background: rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.1);
     }
     .top-header h1 {
       font-size: 1.125rem;
       font-weight: 700;
     }
 
-    /* Main area: chat takes full width; sidebar slides over it */
     .main-content {
       flex: 1;
       display: flex;
       position: relative;
-      /* A bit of top/bottom padding for aesthetics */
       padding: 1rem 1rem;
     }
 
-    /* Chat area: fills the main content behind the sidebar */
     .chat-area {
       flex: 1;
       display: flex;
       flex-direction: column;
       background: #fff; 
-      border-radius: 8px;
+      border-radius: 16px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      overflow: hidden; /* keep content tidy */
+      overflow: hidden;
     }
 
-    /* Sidebar: absolute, slides off screen */
     .sidebar {
       position: absolute;
       top: 0;
       left: 0;
-      height: calc(100% - 2rem); /* minus the .main-content vertical padding */
+      height: calc(100% - 2rem);
       width: 250px;
       background: #fff;
       border-right: 1px solid #ddd;
@@ -110,7 +102,7 @@
       z-index: 999;
       display: flex;
       flex-direction: column;
-      border-radius: 8px;
+      border-radius: 16px;
       overflow: hidden;
     }
     .sidebar.hide {
@@ -121,19 +113,34 @@
       padding: 0.75rem;
       border-bottom: 1px solid #ddd;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .sidebar-header h2 {
       font-size: 1rem;
-      margin-bottom: 0.5rem;
       color: #333;
+      flex: 1;
     }
     .sidebar-header input {
-      width: 100%;
       padding: 0.4rem 0.6rem;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 0.9rem;
       outline: none;
+      flex: 2;
+    }
+    .new-btn {
+      background: #D32F2F;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .new-btn:hover {
+      background: #ad1f1f;
     }
     .conversation-list {
       flex: 1;
@@ -152,12 +159,29 @@
       border-bottom: 1px solid #eee;
       cursor: pointer;
       transition: background 0.2s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .conversation-item:hover {
       background: #efefef;
     }
+    .conversation-item.active {
+      background: #e0e0e0;
+    }
+    .delete-btn {
+      background: #D32F2F;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .delete-btn:hover {
+      background: #ad1f1f;
+    }
 
-    /* The chat message area & input area */
     .chat-messages {
       flex: 1;
       overflow-y: auto;
@@ -175,12 +199,11 @@
       border-radius: 4px;
     }
 
-    /* Message bubble styling */
     .message {
       max-width: 80%;
       margin-bottom: 16px;
       padding: 12px 16px;
-      border-radius: 12px;
+      border-radius: 20px;
       border: 1px solid #eee;
       position: relative;
       line-height: 1.4;
@@ -206,7 +229,6 @@
       color: #999;
     }
 
-    /* Collapsible reasoning from <think>... </think> */
     .thinking-block {
       background: #fafafa;
       border: 1px dashed #ddd;
@@ -225,7 +247,6 @@
       white-space: pre-wrap;
     }
 
-    /* Final answer container */
     .final-answer {
       background: #fffdfa;
       border: 1px solid #f3ede8;
@@ -235,7 +256,6 @@
       box-shadow: 0 1px 2px rgba(0,0,0,0.08);
     }
 
-    /* Sources container */
     .sources-toggle {
       background: #fcfcfc;
       border: 1px solid #eee;
@@ -280,7 +300,6 @@
       background: #ffe6e9;
     }
 
-    /* Code blocks in assistant messages */
     pre code {
       background: #f6f8fa;
       color: #333;
@@ -291,7 +310,6 @@
       font-size: 0.875rem;
     }
 
-    /* Input area at bottom */
     .chat-input-area {
       display: flex;
       align-items: center;
@@ -331,7 +349,6 @@
       background: #ad1f1f;
     }
 
-    /* PDF Modal for text layer + highlighting */
     #pdf-modal {
       display: none;
       position: fixed;
@@ -344,7 +361,7 @@
     #pdf-modal-content {
       position: relative;
       background: #fff;
-      border-radius: 8px;
+      border-radius: 16px;
       padding: 1rem;
       max-width: 95%;
       max-height: 95%;
@@ -398,7 +415,6 @@
       pointer-events: none;
     }
 
-    /* 3-dot typing indicator */
     .typing-indicator {
       display: inline-block;
       vertical-align: middle;
@@ -444,13 +460,10 @@
       <div id="sidebar" class="sidebar hide">
         <div class="sidebar-header">
           <h2>Conversations</h2>
-          <input type="text" placeholder="Search..." />
+          <input type="text" id="search-input" placeholder="Search..." />
+          <button id="new-conversation-btn" class="new-btn">New</button>
         </div>
-        <div class="conversation-list">
-          <div class="conversation-item">Conversation 1</div>
-          <div class="conversation-item">Conversation 2</div>
-          <div class="conversation-item">Conversation 3</div>
-        </div>
+        <div class="conversation-list" id="conversation-list"></div>
       </div>
 
       <!-- Chat area -->
@@ -493,13 +506,21 @@
     const sendBtn = document.getElementById('send-btn');
     const toggleBtn = document.getElementById('toggle-btn');
     const sidebar = document.getElementById('sidebar');
-
-    /* Three-dot typing bubble reference */
+    const searchInput = document.getElementById('search-input');
+    const newConversationBtn = document.getElementById('new-conversation-btn');
     let thinkingMessageDiv = null;
+    let currentConversationId = null;
 
     // Toggle sidebar
     toggleBtn.addEventListener('click', () => {
       sidebar.classList.toggle('hide');
+    });
+
+    // New Conversation
+    newConversationBtn.addEventListener('click', () => {
+      currentConversationId = null;
+      chatMessages.innerHTML = '';
+      document.querySelectorAll('.conversation-item').forEach(item => item.classList.remove('active'));
     });
 
     // Remove Chinese characters
@@ -507,41 +528,38 @@
       return str.replace(/[\u4E00-\u9FFF]+/g, '');
     }
 
-    // Parse <think> blocks
-    function parseThinkBlocks(fullText) {
-      let re = /<think>([\s\S]*?)<\/think>/g;
-      let matches = [];
-      let match;
-      while ((match = re.exec(fullText)) !== null) {
-        matches.push(match[1].trim());
-      }
-      let cleaned = fullText.replace(re, '').trim();
-      return { reasoning: matches.join('\n\n'), finalText: cleaned };
-    }
-
     // Add message bubble
-    function addMessage(content, sender='assistant') {
-      content = removeChineseChars(content);
+    function addMessage(content, sender = 'assistant') {
+  content = removeChineseChars(content);
+  const msgDiv = document.createElement('div');
+  msgDiv.classList.add('message', sender);
 
-      const msgDiv = document.createElement('div');
-      msgDiv.classList.add('message', sender);
-      msgDiv.innerHTML = marked.parse(content);
-
-      const timeDiv = document.createElement('div');
-      timeDiv.className = 'timestamp';
-      timeDiv.textContent = new Date().toLocaleTimeString([], {
-        hour: '2-digit', minute:'2-digit'
-      });
-      msgDiv.appendChild(timeDiv);
-
-      chatMessages.appendChild(msgDiv);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-      return msgDiv; 
+  if (sender === 'user') {
+    msgDiv.innerHTML = marked.parse(content);
+  } else {
+    // For assistant messages, parse Markdown only within .final-answer
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = content; // Set the server-provided HTML
+    const finalAnswerDiv = tempDiv.querySelector('.final-answer');
+    if (finalAnswerDiv) {
+      finalAnswerDiv.innerHTML = marked.parse(finalAnswerDiv.innerHTML);
     }
+    msgDiv.innerHTML = tempDiv.innerHTML; // Use the modified HTML
+  }
 
+  const timeDiv = document.createElement('div');
+  timeDiv.className = 'timestamp';
+  timeDiv.textContent = new Date().toLocaleTimeString([], {
+    hour: '2-digit', minute: '2-digit'
+  });
+  msgDiv.appendChild(timeDiv);
+  chatMessages.appendChild(msgDiv);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  return msgDiv;
+}
     // Show typing (3-dot) bubble
     function showThinkingBubble() {
-      if (thinkingMessageDiv) return; // already showing
+      if (thinkingMessageDiv) return;
       thinkingMessageDiv = document.createElement('div');
       thinkingMessageDiv.classList.add('message', 'assistant');
       thinkingMessageDiv.innerHTML = `
@@ -557,7 +575,6 @@
         hour: '2-digit', minute:'2-digit'
       });
       thinkingMessageDiv.appendChild(timeDiv);
-
       chatMessages.appendChild(thinkingMessageDiv);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
@@ -570,115 +587,143 @@
       }
     }
 
-    // Send user query to /ask
-    async function sendQuery() {
-      let userQuery = chatTextArea.value.trim();
-      if (!userQuery) return;
+    // Conversation Management Functions
+    function addConversationToSidebar(id, title) {
+      const item = document.createElement('div');
+      item.classList.add('conversation-item');
+      item.dataset.id = id;
+      item.innerHTML = `<span>${title}</span><button class="delete-btn">Delete</button>`;
+      item.addEventListener('click', () => loadConversation(id));
+      item.querySelector('.delete-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        deleteConversation(id);
+      });
+      document.getElementById('conversation-list').appendChild(item);
+    }
 
-      userQuery = removeChineseChars(userQuery);
-      addMessage(userQuery, 'user');
-      chatTextArea.value = '';
-      chatTextArea.style.height = 'auto';
-
-      showThinkingBubble();
-
+    async function loadConversation(id) {
       try {
-        const response = await fetch('/ask', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: userQuery })
-        });
-        
-        hideThinkingBubble();
-
-        if (!response.ok) {
-          addMessage('**Error:** Could not fetch server response.');
-          return;
-        }
-
+        const response = await fetch(`/get_conversation/${id}`);
+        if (!response.ok) throw new Error('Failed to load conversation');
         const data = await response.json();
-        if (data.error) {
-          addMessage(`**Error:** ${data.error}`);
-          return;
-        }
-
-        // Parse <think> from final_answer_en & final_answer_fr
-        let enParsed = parseThinkBlocks(data.final_answer_en || '');
-        let frParsed = parseThinkBlocks(data.final_answer_fr || '');
-        let combinedReasoning = [enParsed.reasoning, frParsed.reasoning]
-          .filter(Boolean)
-          .join('\n\n');
-        let combinedAnswer = [enParsed.finalText, frParsed.finalText]
-          .filter(Boolean)
-          .join('\n\n');
-
-        // Build reasoning
-        let reasoningBlock = '';
-        if (combinedReasoning) {
-          reasoningBlock = `
-<details class="thinking-block">
-  <summary>Show Reasoning</summary>
-  <div class="thinking-content">${combinedReasoning}</div>
-</details>`;
-        }
-
-        // Final answer block
-        let finalAnswerBlock = '';
-        if (combinedAnswer.trim()) {
-          finalAnswerBlock = `
-<div class="final-answer">
-  ${marked.parse(combinedAnswer.trim())}
-</div>`;
-        }
-
-        // Sources
-        let sourcesHTML = '';
-        if (Array.isArray(data.sources) && data.sources.length > 0) {
-          const sourceItems = data.sources.map(src => {
-            // If article == "N/A", skip it
-            let linkText = '';
-            let articleLine = '';
-            if (src.article && src.article !== 'N/A') {
-              linkText = `Article ${src.article}`;
-              articleLine = `<span><strong>Article:</strong> ${src.article}</span>`;
-            } else {
-              linkText = `Page ${src.page || 'N/A'}`;
-            }
-
-            return `
-<li class="source-item">
-  <div class="source-info">
-    <span><strong>Law:</strong> ${src.law || 'N/A'}</span>
-    ${articleLine}
-    <span><strong>Page:</strong> ${src.page || 'N/A'}</span>
-  </div>
-  <a href="#" class="source-link"
-     onclick="openPDFModal(${src.page || 1}, '${(src.article && src.article !== 'N/A') ? 'Article '+src.article : ''}'); return false;">
-    ${linkText}
-  </a>
-</li>`;
-          }).join('');
-
-          sourcesHTML = `
-<details class="sources-toggle">
-  <summary>Show Sources</summary>
-  <ul class="sources-list">
-    ${sourceItems}
-  </ul>
-</details>`;
-        }
-
-        let combinedContent = reasoningBlock + finalAnswerBlock + sourcesHTML;
-        addMessage(combinedContent, 'assistant');
-
+        if (data.error) throw new Error(data.error);
+        currentConversationId = id;
+        chatMessages.innerHTML = '';
+        data.messages.forEach(msg => addMessage(msg.content, msg.role));
+        document.querySelectorAll('.conversation-item').forEach(item => {
+          item.classList.remove('active');
+          if (item.dataset.id == id) item.classList.add('active');
+        });
       } catch (err) {
         console.error(err);
-        hideThinkingBubble();
-        addMessage('**Error:** Network or server issue.', 'assistant');
+        alert('Failed to load conversation');
       }
     }
 
-    sendBtn.addEventListener('click', sendQuery);
+    async function deleteConversation(id) {
+      if (confirm('Are you sure you want to delete this conversation?')) {
+        try {
+          const response = await fetch(`/delete_conversation/${id}`, { method: 'DELETE' });
+          if (!response.ok) throw new Error('Failed to delete');
+          document.querySelector(`.conversation-item[data-id="${id}"]`).remove();
+          if (currentConversationId === id) {
+            currentConversationId = null;
+            chatMessages.innerHTML = '';
+          }
+        } catch (err) {
+          console.error(err);
+          alert('Failed to delete conversation');
+        }
+      }
+    }
+
+    async function loadAllConversations() {
+      try {
+        const response = await fetch('/get_conversations');
+        if (!response.ok) throw new Error('Failed to load conversations');
+        const conversations = await response.json();
+        document.getElementById('conversation-list').innerHTML = '';
+        conversations.forEach(conv => addConversationToSidebar(conv.id, conv.title));
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    searchInput.addEventListener('input', async () => {
+      const query = searchInput.value.trim();
+      try {
+        const response = await fetch('/search_conversations', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query })
+        });
+        if (!response.ok) throw new Error('Search failed');
+        const results = await response.json();
+        document.getElementById('conversation-list').innerHTML = '';
+        results.forEach(conv => addConversationToSidebar(conv.id, conv.title));
+      } catch (err) {
+        console.error(err);
+      }
+    });
+
+    // Send user query to /ask
+    async function sendQuery() {
+  let userQuery = chatTextArea.value.trim();
+  if (!userQuery) return;
+
+  userQuery = removeChineseChars(userQuery);
+  addMessage(userQuery, 'user');
+  chatTextArea.value = '';
+  chatTextArea.style.height = 'auto';
+
+  showThinkingBubble();
+
+  try {
+    const payload = { query: userQuery };
+    if (currentConversationId) payload.conversation_id = currentConversationId;
+    const response = await fetch('/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    
+    hideThinkingBubble();
+
+    if (!response.ok) {
+      throw new Error('Could not fetch server response');
+    }
+
+    const data = await response.json();
+    if (data.error) {
+      throw new Error(data.error);
+    }
+
+    // Handle new conversation
+    if (data.title) {
+      currentConversationId = data.conversation_id;
+      addConversationToSidebar(data.conversation_id, data.title);
+      document.querySelectorAll('.conversation-item').forEach(item => {
+        item.classList.remove('active');
+        if (item.dataset.id == data.conversation_id) item.classList.add('active');
+      });
+    }
+
+    // Use the pre-built assistant_html directly
+    let combinedContent = data.assistant_html;
+    addMessage(combinedContent, 'assistant');
+
+    // Optionally, handle sources for PDF highlighting if needed
+    if (data.sources && data.sources.length > 0) {
+      // You can store or use data.sources for additional functionality
+    }
+  } catch (err) {
+    console.error(err);
+    hideThinkingBubble();
+    addMessage(`**Error:** ${err.message || 'Network or server issue'}`, 'assistant');
+  }
+}
+    
+sendBtn.addEventListener('click', sendQuery);
     chatTextArea.addEventListener('keypress', e => {
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
@@ -698,7 +743,6 @@
       const textLayerDiv = document.getElementById('pdf-text-layer');
       const ctx = canvas.getContext('2d');
 
-      // Clear old text
       textLayerDiv.innerHTML = '';
 
       try {
@@ -725,18 +769,14 @@
             pdfjsLib.Util.transform(viewport.transform, item.transform),
             [1, 0, 0, -1, 0, 0]
           );
-          const left = tx[4];
-          const top = tx[5] - item.height;
-          textDiv.style.left = left + 'px';
-          textDiv.style.top = top + 'px';
+          textDiv.style.left = tx[4] + 'px';
+          textDiv.style.top = (tx[5] - item.height) + 'px';
           textDiv.style.fontSize = item.transform[0] * factor + 'px';
           textDiv.style.fontFamily = 'sans-serif';
           textDiv.textContent = item.str;
-
           textLayerDiv.appendChild(textDiv);
         });
 
-        // highlight if needed
         if (highlightText) {
           textContent.items.forEach(item => {
             if (item.str && item.str.includes(highlightText)) {
@@ -755,7 +795,6 @@
               highlightDiv.style.top = top + 'px';
               highlightDiv.style.width = width + 'px';
               highlightDiv.style.height = height + 'px';
-
               textLayerDiv.appendChild(highlightDiv);
             }
           });
@@ -773,11 +812,13 @@
       const canvas = document.getElementById('pdf-canvas');
       const ctx = canvas.getContext('2d');
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
       document.getElementById('pdf-text-layer').innerHTML = '';
       modal.style.display = 'none';
     }
     document.getElementById('pdf-close-btn').addEventListener('click', closePDFModal);
+
+    // Load conversations on page load
+    loadAllConversations();
   </script>
 </body>
 </html>
